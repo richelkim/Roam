@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
 const navItems = [
-  { href: '/hikes', label: 'Hikes' },
   { href: '/how-it-works', label: 'How It Works' },
 ]
 

@@ -100,7 +100,7 @@ Hike entries are editorial rows or image-plus-data compositions separated by rul
 
 ### Navigation
 
-The wordmark returns Home. Desktop navigation is a compact horizontal index containing Hikes, How It Works, and Join a Hike. It floats over photographic heroes on a translucent warm-paper field with a 22px background blur, a quiet light edge, and no decorative glass effects. Mobile navigation preserves the visible links and wraps the electric-blue primary action onto its own row.
+The wordmark returns Home. Desktop navigation is a compact horizontal index containing How It Works and Join a Hike. It floats over photographic heroes on a translucent warm-paper field with a 22px background blur, a quiet light edge, and no decorative glass effects. Mobile navigation preserves the visible links and wraps the electric-blue primary action onto its own row.
 
 ## Do's and Don'ts
 

@@ -95,18 +95,6 @@ export default function HomePage() {
         </ol>
       </section>
 
-      <section className="photo-strip" aria-label="Roam field photographs">
-        <div className="strip-image strip-wide">
-          <Image src="/images/bridge-notes.jpg" alt="Close view of hikers exchanging a trail note on a damp footbridge" fill sizes="60vw" className="cover-image" />
-        </div>
-        <div className="strip-caption">
-          <p>Bring water and wear shoes that can get muddy. Leave room for the people you haven’t met yet.</p>
-        </div>
-        <div className="strip-image strip-tall">
-          <Image src="/images/river-break.jpg" alt="Candid photograph of friends taking a break beside an Ontario river" fill sizes="40vw" className="cover-image" />
-        </div>
-      </section>
-
       <section className="final-cta">
         <Image src="/images/riverwood-river.jpg" alt="View of a quiet river bend in an Ontario woodland" fill sizes="100vw" className="cover-image" />
         <div className="cta-wash" />

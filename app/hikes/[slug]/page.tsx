@@ -70,7 +70,7 @@ export default async function HikePage({ params }: { params: Promise<{ slug: str
         <div className="route-copy">
           <p className="technical blue">ROUTE</p>
           <h2>Route coming soon.</h2>
-          <p>No public Strava route has been added. Richel can paste either a public embed or external URL into this hike’s record when it is ready.</p>
+          <p>No public Strava route has been added. The hike lead can add either a public embed or external URL to this hike’s record when it’s ready.</p>
           {hike.stravaEmbedUrl ? (
             <iframe className="strava-frame" src={hike.stravaEmbedUrl} title={`${hike.title} Strava route`} loading="lazy" />
           ) : hike.stravaRouteUrl ? (

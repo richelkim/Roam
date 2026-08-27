@@ -33,7 +33,7 @@ export default async function JoinPage({ params }: { params: Promise<{ slug: str
       </header>
       <aside className="setup-notice">
         <strong>TALLY FORM NOT CONNECTED</strong>
-        <p>The production Tally URL and Richel’s private recipient email still need to be configured.</p>
+        <p>The production Tally URL and private organizer recipient email still need to be configured.</p>
       </aside>
       {tallyUrl ? (
         <iframe className="tally-frame" src={tallyUrl} title={`RSVP for ${hike.title}`} />

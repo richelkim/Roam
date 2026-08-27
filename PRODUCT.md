@@ -20,7 +20,7 @@ Roam is a small, social hiking club and independent outdoor publication: local o
 
 ## Operating Context
 
-Visitors browse on desktop or mobile, often from campus or while coordinating weekend plans. Richel maintains a single collection of hikes, shares meeting and packing details, optionally adds a public Strava embed or route link, and receives RSVP submissions by email through Tally.
+Visitors browse on desktop or mobile, often from campus or while coordinating weekend plans. The organizers maintain a single collection of hikes, share meeting and packing details, optionally add a public Strava embed or route link, and receive RSVP submissions by email through Tally.
 
 ## Capabilities and Constraints
 
@@ -29,7 +29,7 @@ Visitors browse on desktop or mobile, often from campus or while coordinating we
 - Hike records include logistics, difficulty, registration state, meeting information, packing guidance, photographs, and optional Strava fields.
 - RSVP captures contact, experience, transportation, notes, risk acknowledgement, and a hidden hike identifier.
 - No accounts, memberships, payments, database, custom map, automated capacity management, or administrative application.
-- The first event is an internal preview and should not be promoted publicly until Richel is ready.
+- The first event is an internal preview and should not be promoted publicly until the organizers are ready.
 - The production Tally form URL and private recipient email remain open decisions. Neither may be invented or exposed publicly.
 
 ## Brand Commitments

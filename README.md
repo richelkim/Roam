@@ -2,7 +2,7 @@
 
 For people who like going somewhere.
 
-Roam is a Toronto-area hiking club website built with Next.js. V1 includes Home, Hikes, individual hike pages, How It Works, and an RSVP handoff prepared for Tally.
+Roam is a Toronto-area hiking club. V1 includes Home, Hikes, individual hike pages, How It Works, and an RSVP handoff prepared for Tally.
 
 ## Content model
 

@@ -1,17 +1,17 @@
-import { getBlogPosts } from 'app/blog/utils'
+import { hikes } from './content/hikes'
 
-export const baseUrl = 'https://portfolio-blog-starter.vercel.app'
+export const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://roam-hike.vercel.app'
 
 export default async function sitemap() {
-  let blogs = getBlogPosts().map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.metadata.publishedAt,
+  const hikePages = hikes.filter((hike) => hike.state !== 'completed').map((hike) => ({
+    url: `${baseUrl}/hikes/${hike.slug}`,
+    lastModified: new Date().toISOString().split('T')[0],
   }))
 
-  let routes = ['', '/blog'].map((route) => ({
+  const routes = ['', '/hikes', '/how-it-works'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }))
 
-  return [...routes, ...blogs]
+  return [...routes, ...hikePages]
 }

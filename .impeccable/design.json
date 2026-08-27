@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-27T22:00:00-04:00",
+  "title": "Design System: Roam",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Warm Field Paper", "canonical": "#F2F0E8", "tonalRamp": ["#272823", "#444640", "#666860", "#898b82", "#adafa7", "#cecfc8", "#e3e2dc", "#f2f0e8"] },
+      "ink": { "role": "neutral", "displayName": "Near-Black Ink", "canonical": "#161713", "tonalRamp": ["#161713", "#30322d", "#50524c", "#72746d", "#969890", "#b9bab4", "#d9dad4", "#f1f1ed"] },
+      "forest": { "role": "secondary", "displayName": "Muted Forest", "canonical": "#2F4635", "tonalRamp": ["#132019", "#213229", "#2f4635", "#4f6654", "#718575", "#98a79a", "#c5cec5", "#edf1ed"] },
+      "forest-deep": { "role": "secondary", "displayName": "Deep Ravine", "canonical": "#17251C", "tonalRamp": ["#0d1711", "#17251c", "#2b3a30", "#4b5a50", "#6f7e73", "#99a59c", "#c8cec9", "#f0f2f0"] },
+      "electric-blue": { "role": "primary", "displayName": "Route Blue", "canonical": "#1647FF", "tonalRamp": ["#071444", "#0b2477", "#1036b1", "#1647ff", "#4d73ff", "#819dff", "#bac8ff", "#eef1ff"] },
+      "mist": { "role": "neutral", "displayName": "Trail Mist", "canonical": "#D9DDD0", "tonalRamp": ["#252921", "#44493e", "#656b5f", "#888e81", "#acb2a5", "#cbd0c4", "#e3e6dd", "#f2f4ee"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Editorial Display", "purpose": "Oversized wordmarks and page titles." },
+      "body": { "displayName": "Field Copy", "purpose": "Plainspoken descriptions and logistics." },
+      "label": { "displayName": "Technical Label", "purpose": "Hike numbers, distance, dates, status, and route notes." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "route-draw", "value": "1.8s cubic-bezier(.16,1,.3,1)", "purpose": "The single authored motion: an illustrative route line draws once." },
+      { "name": "state-fast", "value": "200ms ease-out", "purpose": "Button, link, and focus state transitions." }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "700px" },
+      { "name": "stacked", "value": "980px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Compact Route Blue action with a directional arrow.",
+      "html": "<button class=\"ds-button-primary\">JOIN THIS HIKE <span>↗</span></button>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;padding:16px 19px;border:0;border-radius:999px;background:#1647FF;color:#fff;font:650 11px/1 ui-monospace,monospace;letter-spacing:.055em;transition:background-color .2s ease-out,transform .2s ease-out}.ds-button-primary:hover{background:#17251C;transform:translateY(-2px)}.ds-button-primary:focus-visible{outline:3px solid #1647FF;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Route Link",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Transparent pill used over photography.",
+      "html": "<a class=\"ds-route-link\" href=\"#\">SEE THE NEXT HIKE <span>↗</span></a>",
+      "css": ".ds-route-link{display:inline-flex;align-items:center;justify-content:space-between;gap:28px;min-width:230px;padding:16px 19px;border:1px solid currentColor;border-radius:999px;color:#161713;font:650 11px/1 ui-monospace,monospace;letter-spacing:.055em;text-decoration:none}.ds-route-link:hover{background:#161713;color:#F2F0E8}.ds-route-link:focus-visible{outline:3px solid #1647FF;outline-offset:3px}"
+    },
+    {
+      "name": "Status Chip",
+      "kind": "chip",
+      "description": "Small state indicator for Open, Full, Sample, and Completed.",
+      "html": "<span class=\"ds-status\">SAMPLE · OPEN</span>",
+      "css": ".ds-status{display:inline-flex;padding:8px 11px;border:1px solid #161713;border-radius:999px;color:#161713;font:600 10px/1 ui-monospace,monospace;letter-spacing:.06em}"
+    },
+    {
+      "name": "Hike Specification Band",
+      "kind": "custom",
+      "description": "Border-ruled technical data replaces card chrome.",
+      "html": "<div class=\"ds-spec\"><span>Distance</span><strong>8.5 KM</strong></div>",
+      "css": ".ds-spec{display:flex;min-height:92px;flex-direction:column;justify-content:space-between;padding:16px;border-top:1px solid rgba(22,23,19,.24);border-bottom:1px solid rgba(22,23,19,.24);color:#161713}.ds-spec span{font:600 10px/1.2 ui-monospace,monospace;letter-spacing:.07em;color:#676b61}.ds-spec strong{font:550 13px/1.2 Arial,sans-serif}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "description": "Title-case wordmark, compact index links, and a persistent blue action.",
+      "html": "<nav class=\"ds-nav\"><strong>Roam</strong><a href=\"#\">Hikes</a><a class=\"ds-nav-cta\" href=\"#\">Join a Hike ↗</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:28px;padding:16px;background:#F2F0E8;color:#161713;font:560 14px/1 Arial,sans-serif}.ds-nav strong{margin-right:auto;font-size:28px;letter-spacing:-.04em}.ds-nav a{color:inherit;text-decoration:none}.ds-nav-cta{padding:13px 18px;border-radius:999px;background:#1647FF;color:#fff!important;font:650 11px/1 ui-monospace,monospace}.ds-nav a:focus-visible{outline:3px solid #1647FF;outline-offset:3px}"
+    },
+    {
+      "name": "RSVP Field",
+      "kind": "input",
+      "description": "Flat label and ruled field for the Tally handoff preview.",
+      "html": "<label class=\"ds-field\">Email<input type=\"email\" placeholder=\"you@example.com\"></label>",
+      "css": ".ds-field{display:grid;gap:9px;color:#161713;font:550 16px/1.4 Arial,sans-serif}.ds-field input{width:100%;padding:12px 0;border:0;border-bottom:1px solid #161713;border-radius:0;background:transparent;color:#161713;font:400 16px/1.4 Arial,sans-serif}.ds-field input:focus-visible{outline:3px solid #1647FF;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Weekend Field Issue",
+    "overview": "Roam feels like a small-run outdoor magazine assembled by people who actually went outside together. The title-case wordmark is a deliberate identity rule. Trova’s image-led pacing is retained while luxury-expedition polish is removed.",
+    "keyCharacteristics": ["Oversized sans-serif wordmarks", "Full-bleed restrained nature photography", "Warm paper fields", "Electric-blue route and action marks", "Technical mono logistics", "Almost no card chrome"],
+    "rules": [
+      { "name": "Blue Means Movement", "body": "Electric blue appears only where the visitor can act, navigate, or follow a route-like line.", "section": "colors" },
+      { "name": "Two Registers", "body": "Human invitations use confident sans-serif; dates, coordinates, distances, and hike numbers use compact mono.", "section": "typography" },
+      { "name": "Flat Publication", "body": "If an element needs separation, use spacing, a rule, or a change of field—not a floating panel.", "section": "elevation" }
+    ],
+    "dos": ["Treat route state, distance, date, and difficulty as first-class content.", "Let one strong photograph own a viewport or section.", "Mark illustrative and unverified sample content near the relevant claim.", "Use restrained transitions and a single route-drawing moment."],
+    "donts": ["Introduce glossy gradients, fake film scratches, glass panels, or decorative shadows.", "Use commercial travel-agency language or athletic performance framing.", "Place every section in rounded cards.", "Imply that a sample hike, route, or registration endpoint is confirmed.", "Set the Roam name in all caps."]
+  }
+}

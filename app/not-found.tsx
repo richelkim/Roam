@@ -1,10 +1,11 @@
+import Link from 'next/link'
+
 export default function NotFound() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        404 - Page Not Found
-      </h1>
-      <p className="mb-4">The page you are looking for does not exist.</p>
-    </section>
+    <main className="not-found page-shell">
+      <p className="technical blue">404 / OFF TRAIL</p>
+      <h1>This path<br />doesn’t go anywhere.</h1>
+      <Link className="button-primary" href="/">BACK TO Roam <span aria-hidden="true">↗</span></Link>
+    </main>
   )
 }

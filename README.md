@@ -1,42 +1,37 @@
-# Portfolio Blog Starter
+# Roam
 
-This is a porfolio site template complete with a blog. Includes:
+For people who like going somewhere.
 
-- MDX and Markdown support
-- Optimized for SEO (sitemap, robots, JSON-LD schema)
-- RSS Feed
-- Dynamic OG images
-- Syntax highlighting
-- Tailwind v4
-- Vercel Speed Insights / Web Analytics
-- Geist font
+Roam is a Toronto-area hiking club website built with Next.js. V1 includes Home, Hikes, individual hike pages, How It Works, and an RSVP handoff prepared for Tally.
 
-## Demo
+## Content model
 
-https://portfolio-blog-starter.vercel.app
+The single typed Hikes collection lives in `app/content/hikes.ts`. Each record supports:
 
-## How to Use
+- `upcoming`, `full`, and `completed` states
+- date, time, location, distance, duration, elevation, and difficulty
+- meeting, transportation, and packing information
+- photographs
+- optional `stravaEmbedUrl` or `stravaRouteUrl`
 
-You can choose from one of the following two methods to use this repository:
+Completed entries remain available in the collection for future use but are not surfaced in V1.
 
-### One-Click Deploy
+## RSVP configuration
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+Copy `.env.example` to `.env.local` and configure:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/blog&project-name=blog&repository-name=blog)
+- `NEXT_PUBLIC_TALLY_FORM_URL`: the public Tally form URL. The hike name and ID are appended as query parameters.
+- `RSVP_RECIPIENT_EMAIL`: Richel’s private notification recipient. This is intentionally server-only and must not be exposed in client code.
 
-### Clone and Deploy
+Without a Tally URL, the site shows a clearly labelled, non-submitting RSVP preview.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
+## Development
 
 ```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/solutions/blog blog
-```
-
-Then, run Next.js in development mode:
-
-```bash
+pnpm install
 pnpm dev
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/templates) ([Documentation](https://nextjs.org/docs/app/building-your-application/deploying)).
+## Sample-content policy
+
+All bundled events, route information, and photographs are illustrative sample content. No route is presented as verified, and sample meeting information must never be used for navigation.

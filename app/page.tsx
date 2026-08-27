@@ -1,21 +1,130 @@
-import { BlogPosts } from 'app/components/posts'
+import Image from 'next/image'
+import Link from 'next/link'
+import { RouteMark } from './components/route-mark'
+import { hikes } from './content/hikes'
 
-export default function Page() {
+const featured = hikes.find((hike) => hike.slug === 'riverwood-loop')!
+
+export default function HomePage() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
-      <div className="my-8">
-        <BlogPosts />
-      </div>
-    </section>
+    <>
+      <section className="hero" aria-labelledby="home-title">
+        <Image
+          src="/images/roam-hero.jpg"
+          alt="Illustrative editorial photograph of friends walking through an Ontario ravine"
+          fill
+          priority
+          sizes="100vw"
+          className="hero-image"
+        />
+        <div className="hero-wash" />
+        <div className="hero-topline technical">
+          <span>TORONTO + THE PLACES AROUND IT</span>
+          <span>OPEN TO EVERYONE</span>
+        </div>
+        <div className="hero-copy">
+          <h1 id="home-title">Roam</h1>
+          <div className="hero-bottom">
+            <p className="hero-tagline">For people who<br />like going somewhere.</p>
+            <Link className="round-link light" href="/hikes">
+              SEE THE NEXT HIKE <span aria-hidden="true">↗</span>
+            </Link>
+          </div>
+        </div>
+        <p className="image-credit technical">ILLUSTRATIVE PHOTOGRAPHY · SAMPLE CONTENT</p>
+      </section>
+
+      <section className="intro page-grid section-space">
+        <p className="section-kicker technical">A SMALL CLUB FOR BIGGER WEEKENDS</p>
+        <div className="intro-copy">
+          <h2>We take the long way out of the city.</h2>
+          <p>
+            Roam is a Toronto-area hiking club for curious people who want to
+            see somewhere new and have someone new to talk to on the way. Most
+            of us are students. None of us need to be experts.
+          </p>
+        </div>
+        <RouteMark className="intro-route" />
+      </section>
+
+      <section className="featured-section" aria-labelledby="featured-title">
+        <div className="featured-photo">
+          <Image
+            src={featured.heroImage}
+            alt={featured.imageAlt}
+            fill
+            sizes="(max-width: 900px) 100vw, 58vw"
+            className="cover-image"
+          />
+          <span className="sample-stamp technical">ILLUSTRATIVE / ROUTE UNVERIFIED</span>
+        </div>
+        <div className="featured-details">
+          <div className="featured-heading-row">
+            <p className="technical blue">FEATURED UPCOMING HIKE</p>
+            <span className="status-dot">SAMPLE · OPEN</span>
+          </div>
+          <p className="hike-number technical">Roam {featured.number}</p>
+          <h2 id="featured-title">{featured.title}</h2>
+          <p className="featured-location">{featured.location}</p>
+          <div className="spec-grid">
+            <div><span>DATE</span><strong>{featured.dateShort}</strong></div>
+            <div><span>START</span><strong>{featured.time}</strong></div>
+            <div><span>DISTANCE</span><strong>{featured.distance}</strong></div>
+            <div><span>DURATION</span><strong>{featured.duration}</strong></div>
+            <div><span>ELEVATION</span><strong>{featured.elevation}</strong></div>
+            <div><span>DIFFICULTY</span><strong>{featured.difficulty}</strong></div>
+          </div>
+          <p className="featured-description">{featured.shortDescription}</p>
+          <div className="action-row">
+            <Link className="button-primary" href={`/hikes/${featured.slug}`}>
+              VIEW SAMPLE HIKE <span aria-hidden="true">↗</span>
+            </Link>
+            <Link className="text-link" href="/hikes">ALL HIKES →</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="how-preview page-shell section-space" aria-labelledby="how-title">
+        <div className="section-heading">
+          <p className="technical blue">HOW IT WORKS</p>
+          <h2 id="how-title">Pick a trail.<br />We’ll sort the rest.</h2>
+          <Link className="text-link" href="/how-it-works">THE FULL DETAILS →</Link>
+        </div>
+        <ol className="steps-list">
+          <li><span>01</span><div><h3>Find a hike</h3><p>Read the pace, distance, transit plan, and what the day is likely to feel like.</p></div></li>
+          <li><span>02</span><div><h3>Put your name down</h3><p>Share a few details through a short RSVP so the group can plan well.</p></div></li>
+          <li><span>03</span><div><h3>Show up and roam</h3><p>Meet at the shared point, walk together, and leave with a new part of the city.</p></div></li>
+        </ol>
+      </section>
+
+      <section className="photo-strip" aria-label="Illustrative Roam field photographs">
+        <div className="strip-image strip-wide">
+          <Image src="/images/bridge-notes.jpg" alt="Illustrative close view of hikers exchanging a trail note on a damp footbridge" fill sizes="60vw" className="cover-image" />
+        </div>
+        <div className="strip-caption">
+          <p className="technical">FIELD NOTE / 00</p>
+          <p>Bring water. Wear shoes that can get muddy. Leave room for one person you haven’t met yet.</p>
+        </div>
+        <div className="strip-image strip-tall">
+          <Image src="/images/river-break.jpg" alt="Illustrative candid photograph of friends taking a break beside an Ontario river" fill sizes="40vw" className="cover-image" />
+        </div>
+      </section>
+
+      <section className="field-note-band page-shell">
+        <p className="technical blue">WHY Roam</p>
+        <blockquote>“A hike is just long enough to get past small talk.”</blockquote>
+        <p>No networking. No pace leaderboard. Just a good trail, a clear plan, and a group small enough to learn everyone’s name.</p>
+      </section>
+
+      <section className="final-cta">
+        <Image src="/images/riverwood-river.jpg" alt="Illustrative view of a quiet river bend in an Ontario woodland" fill sizes="100vw" className="cover-image" />
+        <div className="cta-wash" />
+        <div className="final-cta-copy">
+          <p className="technical">NEXT OUTING · SAMPLE LISTING</p>
+          <h2>Come for the trail.<br />Stay for the people.</h2>
+          <Link className="button-primary inverse" href={`/hikes/${featured.slug}`}>JOIN A HIKE <span aria-hidden="true">↗</span></Link>
+        </div>
+      </section>
+    </>
   )
 }

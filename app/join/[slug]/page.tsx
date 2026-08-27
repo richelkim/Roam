@@ -27,13 +27,13 @@ export default async function JoinPage({ params }: { params: Promise<{ slug: str
   return (
     <main className="join-page page-shell">
       <header>
-        <p className="technical blue">Roam {hike.number} · SAMPLE RSVP</p>
+        <p className="technical blue">Roam {hike.number} · RSVP</p>
         <h1>Join<br />{hike.title}</h1>
         <p>{hike.date} · {hike.time}<br />{hike.location}</p>
       </header>
-      <aside className="sample-notice">
-        <strong>REGISTRATION IS NOT LIVE</strong>
-        <p>This fictional event is a V1 demonstration. The production Tally URL and Richel’s private recipient email still need to be configured.</p>
+      <aside className="setup-notice">
+        <strong>TALLY FORM NOT CONNECTED</strong>
+        <p>The production Tally URL and Richel’s private recipient email still need to be configured.</p>
       </aside>
       {tallyUrl ? (
         <iframe className="tally-frame" src={tallyUrl} title={`RSVP for ${hike.title}`} />

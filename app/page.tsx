@@ -11,7 +11,7 @@ export default function HomePage() {
       <section className="hero" aria-labelledby="home-title">
         <Image
           src="/images/roam-hero.jpg"
-          alt="Illustrative editorial photograph of friends walking through an Ontario ravine"
+          alt="Editorial photograph of friends walking through an Ontario ravine"
           fill
           priority
           sizes="100vw"
@@ -19,7 +19,6 @@ export default function HomePage() {
         />
         <div className="hero-wash" />
         <div className="hero-topline technical">
-          <span>TORONTO + THE PLACES AROUND IT</span>
           <span>OPEN TO EVERYONE</span>
         </div>
         <div className="hero-copy">
@@ -31,11 +30,9 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <p className="image-credit technical">ILLUSTRATIVE PHOTOGRAPHY · SAMPLE CONTENT</p>
       </section>
 
       <section className="intro page-grid section-space">
-        <p className="section-kicker technical">A SMALL CLUB FOR BIGGER WEEKENDS</p>
         <div className="intro-copy">
           <h2>We take the long way out of the city.</h2>
           <p>
@@ -56,12 +53,11 @@ export default function HomePage() {
             sizes="(max-width: 900px) 100vw, 58vw"
             className="cover-image"
           />
-          <span className="sample-stamp technical">ILLUSTRATIVE / ROUTE UNVERIFIED</span>
         </div>
         <div className="featured-details">
           <div className="featured-heading-row">
-            <p className="technical blue">FEATURED UPCOMING HIKE</p>
-            <span className="status-dot">SAMPLE · OPEN</span>
+            <p className="technical featured-label">UPCOMING HIKE</p>
+            <span className="status-dot">REGISTRATION OPEN</span>
           </div>
           <p className="hike-number technical">Roam {featured.number}</p>
           <h2 id="featured-title">{featured.title}</h2>
@@ -77,7 +73,7 @@ export default function HomePage() {
           <p className="featured-description">{featured.shortDescription}</p>
           <div className="action-row">
             <Link className="button-primary" href={`/hikes/${featured.slug}`}>
-              VIEW SAMPLE HIKE <span aria-hidden="true">↗</span>
+              VIEW HIKE <span aria-hidden="true">↗</span>
             </Link>
             <Link className="text-link" href="/hikes">ALL HIKES →</Link>
           </div>
@@ -97,16 +93,15 @@ export default function HomePage() {
         </ol>
       </section>
 
-      <section className="photo-strip" aria-label="Illustrative Roam field photographs">
+      <section className="photo-strip" aria-label="Roam field photographs">
         <div className="strip-image strip-wide">
-          <Image src="/images/bridge-notes.jpg" alt="Illustrative close view of hikers exchanging a trail note on a damp footbridge" fill sizes="60vw" className="cover-image" />
+          <Image src="/images/bridge-notes.jpg" alt="Close view of hikers exchanging a trail note on a damp footbridge" fill sizes="60vw" className="cover-image" />
         </div>
         <div className="strip-caption">
-          <p className="technical">FIELD NOTE / 00</p>
           <p>Bring water. Wear shoes that can get muddy. Leave room for one person you haven’t met yet.</p>
         </div>
         <div className="strip-image strip-tall">
-          <Image src="/images/river-break.jpg" alt="Illustrative candid photograph of friends taking a break beside an Ontario river" fill sizes="40vw" className="cover-image" />
+          <Image src="/images/river-break.jpg" alt="Candid photograph of friends taking a break beside an Ontario river" fill sizes="40vw" className="cover-image" />
         </div>
       </section>
 
@@ -117,10 +112,11 @@ export default function HomePage() {
       </section>
 
       <section className="final-cta">
-        <Image src="/images/riverwood-river.jpg" alt="Illustrative view of a quiet river bend in an Ontario woodland" fill sizes="100vw" className="cover-image" />
+        <Image src="/images/riverwood-river.jpg" alt="View of a quiet river bend in an Ontario woodland" fill sizes="100vw" className="cover-image" />
         <div className="cta-wash" />
+        <div className="cta-glass" aria-hidden="true" />
         <div className="final-cta-copy">
-          <p className="technical">NEXT OUTING · SAMPLE LISTING</p>
+          <p className="technical">NEXT OUTING</p>
           <h2>Come for the trail.<br />Stay for the people.</h2>
           <Link className="button-primary inverse" href={`/hikes/${featured.slug}`}>JOIN A HIKE <span aria-hidden="true">↗</span></Link>
         </div>

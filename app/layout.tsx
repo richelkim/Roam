@@ -52,6 +52,15 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/cabinet-grotesk-500.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>
         <Navbar />
         {children}

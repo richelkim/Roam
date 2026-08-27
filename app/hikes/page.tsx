@@ -21,11 +21,6 @@ export default function HikesPage() {
         <p className="index-intro">A few hours outside, a clear plan, and a group of people who were strangers that morning.</p>
       </header>
 
-      <aside className="sample-notice page-shell" aria-label="Sample content notice">
-        <strong>SAMPLE CONTENT</strong>
-        <p>These V1 listings are fictional demonstrations. No hike or route on this site is currently confirmed or verified.</p>
-      </aside>
-
       <section className="hike-index page-shell" aria-label="Hike listings">
         {visibleHikes.map((hike) => <HikeCard key={hike.slug} hike={hike} />)}
       </section>

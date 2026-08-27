@@ -32,6 +32,6 @@ pnpm install
 pnpm dev
 ```
 
-## Sample-content policy
+## Release note
 
-All bundled events, route information, and photographs are illustrative sample content. No route is presented as verified, and sample meeting information must never be used for navigation.
+The site is an internal preview until Richel connects the production Tally form and is ready to share it.

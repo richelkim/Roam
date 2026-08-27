@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="footer-meta technical">
         <span>TORONTO, ONTARIO</span>
         <span>© {new Date().getFullYear()} Roam</span>
-        <span>V1 · SAMPLE EVENTS LABELED</span>
+        <span>V1 · TORONTO + GTA</span>
       </div>
     </footer>
   )

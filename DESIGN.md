@@ -10,11 +10,11 @@ colors:
   mist: "#D9DDD0"
 typography:
   display:
-    fontFamily: "Geist, Arial, sans-serif"
-    fontSize: "clamp(4rem, 17vw, 13rem)"
-    fontWeight: 800
-    lineHeight: 0.78
-    letterSpacing: "-0.04em"
+    fontFamily: "Trova Cabinet Grotesk, Trova Cabinet Grotesk Placeholder, sans-serif"
+    fontSize: "128px"
+    fontWeight: 500
+    lineHeight: 1
+    letterSpacing: "-0.03em"
   body:
     fontFamily: "Geist, Arial, sans-serif"
     fontSize: "1rem"
@@ -54,7 +54,7 @@ components:
 
 **Creative North Star: “The Weekend Field Issue”**
 
-Roam feels like a small-run outdoor magazine assembled by people who actually went outside together. The title-case wordmark is a deliberate identity rule. The system adapts Trova’s image-led pacing and bold hierarchy, then strips away the luxury-expedition polish: local terrain is photographed with restraint, logistics sit beside expressive headlines, and the electric-blue route trace becomes the recurring editorial mark.
+Roam feels like a small-run outdoor magazine assembled by people who actually went outside together. The navigation wordmark and photographic hero both keep the brand in title case, with the hero acting as the larger editorial title. The system adapts Trova’s image-led pacing and bold hierarchy, then strips away the luxury-expedition polish: local terrain is photographed with restraint, logistics sit beside expressive headlines, and the electric-blue route trace becomes the recurring editorial mark.
 
 The personality is youthful, social, direct, and slightly imperfect without resorting to fake distress. **Key Characteristics:** oversized sans-serif wordmarks; full-bleed nature photography; warm paper fields; blue links and route marks; technical mono labels; hard editorial rules; almost no card chrome.
 
@@ -66,11 +66,11 @@ Warm paper and forest neutrals carry the publication; electric blue is a deliber
 
 ## Typography
 
-**Display Font:** Geist (with Arial fallback)  
+**Display Font:** Trova’s exact Cabinet Grotesk Medium asset, self-hosted with its metric-matched Arial placeholder
 **Body Font:** Geist (with Arial fallback)  
 **Label/Mono Font:** Geist Mono
 
-Large headlines are blunt and compressed by scale rather than a decorative typeface. Small measurements and logistics use mono only because they are technical data.
+Major editorial headings reuse Trova’s Cabinet Grotesk Medium face at 500 weight, with -3% tracking and 100% line height. The title-case hero expands that display treatment to 128px desktop, 88px tablet, and 68px mobile, scaling larger on wide screens. Small measurements and logistics use mono only because they are technical data; navigation and body copy remain in Geist.
 
 **The Two Registers Rule.** Human invitations use confident sans-serif; dates, coordinates, distances, and hike numbers use the compact mono register.
 
@@ -80,7 +80,7 @@ The layout inherits Trova’s full-width image opening, alternating editorial se
 
 ## Elevation & Depth
 
-The system uses no decorative shadows. Depth comes from photographic layering, tonal fields, image cropping, and text placed directly over darkened photographs with controlled contrast.
+The system uses no decorative shadows. Depth comes from photographic layering, tonal fields, image cropping, and text placed directly over darkened photographs with controlled contrast. The navigation is the single exception: a lightly frosted warm-paper surface uses background blur to stay readable over photography without adding glow or refraction.
 
 **The Flat Publication Rule.** If an element needs separation, use spacing, a rule, or a change of field—not a floating panel.
 
@@ -100,7 +100,7 @@ Hike entries are editorial rows or image-plus-data compositions separated by rul
 
 ### Navigation
 
-The wordmark returns Home. Desktop navigation is a compact horizontal index containing Hikes, How It Works, and Join a Hike; mobile navigation wraps into a paper-coloured field with the primary action kept visible.
+The wordmark returns Home. Desktop navigation is a compact horizontal index containing Hikes, How It Works, and Join a Hike. It floats over photographic heroes on a translucent warm-paper field with a 22px background blur, a quiet light edge, and no decorative glass effects. Mobile navigation preserves the visible links and wraps the electric-blue primary action onto its own row.
 
 ## Do's and Don'ts
 
@@ -108,13 +108,13 @@ The wordmark returns Home. Desktop navigation is a compact horizontal index cont
 
 - **Do** treat route state, distance, date, and difficulty as first-class content.
 - **Do** let one strong photograph own a viewport or section.
-- **Do** mark illustrative and unverified sample content near the relevant claim.
-- **Do** use restrained transitions and a single route-drawing moment.
+- **Do** keep operational route and RSVP states concise.
+- **Do** use restrained transitions: the route-drawing moment and the slow Next Outing photograph frost on CTA hover.
 
 ### Don't:
 
-- **Don't** introduce glossy gradients, fake film scratches, glass panels, or decorative shadows.
+- **Don't** introduce glossy gradients, fake film scratches, decorative shadows, or glass panels beyond the restrained navigation surface.
 - **Don't** use commercial travel-agency language or athletic performance framing.
 - **Don't** place every section in rounded cards.
-- **Don't** imply that a sample hike, route, or registration endpoint is confirmed.
-- **Don't** set the Roam name in all caps.
+- **Don't** add warning copy that overwhelms the hike itself.
+- **Don't** set the Roam name in all caps; keep the navigation and photographic hero in title case.

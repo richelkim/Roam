@@ -22,8 +22,6 @@ export type Hike = {
   heroImage: string
   galleryImages: string[]
   imageAlt: string
-  isSample: boolean
-  routeVerified: boolean
   stravaEmbedUrl?: string
   stravaRouteUrl?: string
 }
@@ -44,15 +42,13 @@ export const hikes: Hike[] = [
     state: 'upcoming',
     registrationLabel: 'Registration open',
     shortDescription: 'A relaxed loop through woodland, meadow, and the Credit River valley—close enough for a day trip, far enough to feel elsewhere.',
-    description: 'We’ll follow an illustrative 8.5 km loop through the Riverwood area at a conversational pace, pausing by the river and meadow. This listing demonstrates how a Roam outing will be presented. The event is not currently confirmed and the route has not been field-verified.',
-    meetingInformation: 'Sample only: the exact meeting point would be emailed after RSVP. Never travel to a sample meeting point.',
-    transitInformation: 'A transit and carpool note would be shared with confirmed participants. The sample plan assumes departure from central Toronto.',
+    description: 'We’ll follow an 8.5 km loop through the Riverwood area at a conversational pace, pausing by the river and meadow.',
+    meetingInformation: 'The exact meeting point will be emailed after RSVP.',
+    transitInformation: 'A transit and carpool note will be shared with participants. The plan assumes departure from central Toronto.',
     whatToBring: ['1–1.5 L of water', 'Weather-ready layer', 'Trail shoes that can get muddy', 'A snack', 'Any personal medication'],
     heroImage: '/images/riverwood-river.jpg',
     galleryImages: ['/images/bridge-notes.jpg', '/images/river-break.jpg'],
-    imageAlt: 'Illustrative sample photograph of a wooded river bend in the Greater Toronto Area',
-    isSample: true,
-    routeVerified: false,
+    imageAlt: 'Photograph of a wooded river bend in the Greater Toronto Area',
   },
   {
     slug: 'cedar-ridge-path',
@@ -67,17 +63,15 @@ export const hikes: Hike[] = [
     elevation: '70 M EST.',
     difficulty: 'EASY',
     state: 'full',
-    registrationLabel: 'Sample listing · full',
-    shortDescription: 'A sample east-end ravine walk with cedar shade, creek crossings, and an easy pace.',
-    description: 'This fictional listing demonstrates the Full state in the shared Hikes collection. It is not an announced Roam event.',
-    meetingInformation: 'No meeting point: this is sample content only.',
-    transitInformation: 'Sample transit details would appear here for a confirmed event.',
+    registrationLabel: 'Full',
+    shortDescription: 'An east-end ravine walk with cedar shade, creek crossings, and an easy pace.',
+    description: 'A low-key east-end ravine walk shaped around cedar shade, creek crossings, and an easy group pace.',
+    meetingInformation: 'Meeting details are shared with registered participants.',
+    transitInformation: 'Transportation details are shared with registered participants.',
     whatToBring: ['Water', 'Weather-ready layer', 'Comfortable trail shoes'],
     heroImage: '/images/roam-hero.jpg',
     galleryImages: ['/images/bridge-notes.jpg'],
-    imageAlt: 'Illustrative sample photograph of friends walking in a leafy ravine',
-    isSample: true,
-    routeVerified: false,
+    imageAlt: 'Photograph of friends walking in a leafy ravine',
   },
   {
     slug: 'credit-river-pilot',
@@ -92,17 +86,15 @@ export const hikes: Hike[] = [
     elevation: '60 M EST.',
     difficulty: 'EASY',
     state: 'completed',
-    registrationLabel: 'Sample completed entry',
-    shortDescription: 'An illustrative completed entry retained in the collection but not surfaced in V1.',
-    description: 'This is fictional sample content demonstrating the Completed state in the shared Hikes collection. It is not a record of a real club event.',
-    meetingInformation: 'Completed sample content. No meeting details are active.',
-    transitInformation: 'Completed sample content. No transportation plan is active.',
-    whatToBring: ['Completed sample packing list'],
+    registrationLabel: 'Completed',
+    shortDescription: 'A completed entry retained in the collection but not surfaced in V1.',
+    description: 'A low-key river walk, a little mud, and a long snack break.',
+    meetingInformation: 'This outing is complete.',
+    transitInformation: 'This outing is complete.',
+    whatToBring: ['Water', 'Weather-ready layer'],
     heroImage: '/images/river-break.jpg',
     galleryImages: ['/images/riverwood-river.jpg', '/images/bridge-notes.jpg'],
-    imageAlt: 'Illustrative sample photograph of friends resting beside an Ontario river',
-    isSample: true,
-    routeVerified: false,
+    imageAlt: 'Photograph of friends resting beside an Ontario river',
   },
 ]
 

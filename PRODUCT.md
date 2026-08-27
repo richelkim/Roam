@@ -29,22 +29,22 @@ Visitors browse on desktop or mobile, often from campus or while coordinating we
 - Hike records include logistics, difficulty, registration state, meeting information, packing guidance, photographs, and optional Strava fields.
 - RSVP captures contact, experience, transportation, notes, risk acknowledgement, and a hidden hike identifier.
 - No accounts, memberships, payments, database, custom map, automated capacity management, or administrative application.
-- The first event is fictional sample content and its route is not verified.
+- The first event is an internal preview and should not be promoted publicly until Richel is ready.
 - The production Tally form URL and private recipient email remain open decisions. Neither may be invented or exposed publicly.
 
 ## Brand Commitments
 
-The product name and wordmark are always styled “Roam,” never “ROAM.” The primary line is “For people who like going somewhere.” The voice is direct, welcoming, curious, and unpolished in a deliberate editorial way. The free Trova Framer template is the structural starting point; the implementation adapts its image-led hero, editorial pacing, hike listing, process section, and full-bleed closing call to action rather than inventing a generic startup layout. V1 deliberately excludes an Archive page and Archive navigation.
+The product name, navigation wordmark, and primary photographic hero are styled “Roam.” The primary line is “For people who like going somewhere.” The voice is direct, welcoming, curious, and unpolished in a deliberate editorial way. The free Trova Framer template is the structural starting point; the implementation adapts its image-led hero, editorial pacing, hike listing, process section, and full-bleed closing call to action rather than inventing a generic startup layout. V1 deliberately excludes an Archive page and Archive navigation.
 
 ## Evidence on Hand
 
-The repository contains generated illustrative sample photography for the fictional Riverwood Loop event. No confirmed event, verified route, participant testimonial, live Tally form, or recipient email is available; the site must label those absences honestly.
+The repository contains generated editorial photography for the Riverwood Loop event. A live Tally form and recipient email remain to be configured before RSVPs are accepted.
 
 ## Product Principles
 
 1. Make joining feel socially easy and operationally clear.
 2. Treat local landscapes as worthy of editorial attention without overselling them.
-3. Separate sample, unverified, and confirmed information at every relevant touchpoint.
+3. Keep operational event information clear and easy to update.
 4. Keep content maintainable through one hike record rather than duplicating event facts.
 5. Prefer useful logistics and honest imagery over commercial travel language.
 

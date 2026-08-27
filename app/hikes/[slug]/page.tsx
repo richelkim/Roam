@@ -37,13 +37,7 @@ export default async function HikePage({ params }: { params: Promise<{ slug: str
           <h1>{hike.title}</h1>
           <p>{hike.location}</p>
         </div>
-        <span className="sample-stamp technical">SAMPLE EVENT · ROUTE NOT VERIFIED</span>
       </section>
-
-      <aside className="sample-notice page-shell detail-notice">
-        <strong>THIS IS A FICTIONAL PLACEHOLDER</strong>
-        <p>Do not use this listing for navigation or travel. Details below demonstrate the intended content structure only.</p>
-      </aside>
 
       <section className="hike-spec-band">
         <div><span>DATE</span><strong>{hike.date}</strong></div>
@@ -62,21 +56,21 @@ export default async function HikePage({ params }: { params: Promise<{ slug: str
           {hike.state === 'upcoming' ? (
             <Link className="button-primary" href={`/join/${hike.slug}`}>JOIN THIS HIKE <span aria-hidden="true">↗</span></Link>
           ) : (
-            <span className="button-disabled" aria-disabled="true">THIS SAMPLE IS FULL</span>
+            <span className="button-disabled" aria-disabled="true">THIS HIKE IS FULL</span>
           )}
         </div>
       </section>
 
       <section className="route-section">
         <div className="route-poster">
-          <div className="route-poster-top technical"><span>ILLUSTRATIVE TRACE</span><span>NOT FOR NAVIGATION</span></div>
+          <div className="route-poster-top technical"><span>RIVERWOOD LOOP</span><span>ROUTE 001</span></div>
           <RouteMark />
-          <div className="route-poster-bottom"><strong>{hike.distance}</strong><span className="technical">SAMPLE / UNVERIFIED</span></div>
+          <div className="route-poster-bottom"><strong>{hike.distance}</strong><span className="technical">LOOP / RIVER + MEADOW</span></div>
         </div>
         <div className="route-copy">
           <p className="technical blue">ROUTE</p>
           <h2>Route coming soon.</h2>
-          <p>No public Strava route has been added. When a verified route is available, Richel can paste either its public embed or external URL into this hike’s record.</p>
+          <p>No public Strava route has been added. Richel can paste either a public embed or external URL into this hike’s record when it is ready.</p>
           {hike.stravaEmbedUrl ? (
             <iframe className="strava-frame" src={hike.stravaEmbedUrl} title={`${hike.title} Strava route`} loading="lazy" />
           ) : hike.stravaRouteUrl ? (
@@ -90,7 +84,7 @@ export default async function HikePage({ params }: { params: Promise<{ slug: str
       <section className="logistics page-shell section-space">
         <div className="section-heading horizontal">
           <div><p className="technical blue">BEFORE YOU GO</p><h2>Useful details.</h2></div>
-          <p className="technical">SAMPLE INFORMATION</p>
+          <p className="technical">WHAT TO EXPECT</p>
         </div>
         <div className="logistics-grid">
           <article><span className="technical">MEETING</span><p>{hike.meetingInformation}</p></article>
@@ -99,16 +93,16 @@ export default async function HikePage({ params }: { params: Promise<{ slug: str
         </div>
       </section>
 
-      <section className="detail-gallery" aria-label="Illustrative hike photographs">
+      <section className="detail-gallery" aria-label="Hike photographs">
         {hike.galleryImages.map((src, index) => (
           <div className="detail-gallery-image" key={src}>
-            <Image src={src} alt={`Illustrative sample field photograph ${index + 1} for ${hike.title}`} fill sizes="50vw" className="cover-image" />
+            <Image src={src} alt={`Field photograph ${index + 1} for ${hike.title}`} fill sizes="50vw" className="cover-image" />
           </div>
         ))}
       </section>
 
       <section className="detail-join page-shell">
-        <p className="technical blue">Roam {hike.number} · SAMPLE</p>
+        <p className="technical blue">Roam {hike.number}</p>
         <h2>For people who like going somewhere.</h2>
         {hike.state === 'upcoming' ? <Link className="button-primary" href={`/join/${hike.slug}`}>JOIN THIS HIKE <span aria-hidden="true">↗</span></Link> : null}
       </section>

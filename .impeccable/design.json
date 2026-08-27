@@ -12,13 +12,14 @@
       "mist": { "role": "neutral", "displayName": "Trail Mist", "canonical": "#D9DDD0", "tonalRamp": ["#252921", "#44493e", "#656b5f", "#888e81", "#acb2a5", "#cbd0c4", "#e3e6dd", "#f2f4ee"] }
     },
     "typographyMeta": {
-      "display": { "displayName": "Editorial Display", "purpose": "Oversized wordmarks and page titles." },
+      "display": { "displayName": "Trova Cabinet Grotesk Editorial Display", "purpose": "Trova’s exact Cabinet Grotesk 500 asset for the hero and major editorial headings, with a metric-matched loading fallback." },
       "body": { "displayName": "Field Copy", "purpose": "Plainspoken descriptions and logistics." },
       "label": { "displayName": "Technical Label", "purpose": "Hike numbers, distance, dates, status, and route notes." }
     },
     "shadows": [],
     "motion": [
-      { "name": "route-draw", "value": "1.8s cubic-bezier(.16,1,.3,1)", "purpose": "The single authored motion: an illustrative route line draws once." },
+      { "name": "route-draw", "value": "1.8s cubic-bezier(.16,1,.3,1)", "purpose": "A route line draws once." },
+      { "name": "next-outing-frost", "value": "650ms cubic-bezier(.16,1,.3,1)", "purpose": "The Next Outing photograph gently frosts behind sharp CTA content on hover or keyboard focus." },
       { "name": "state-fast", "value": "200ms ease-out", "purpose": "Button, link, and focus state transitions." }
     ],
     "breakpoints": [
@@ -46,8 +47,8 @@
     {
       "name": "Status Chip",
       "kind": "chip",
-      "description": "Small state indicator for Open, Full, Sample, and Completed.",
-      "html": "<span class=\"ds-status\">SAMPLE · OPEN</span>",
+      "description": "Small state indicator for Open, Full, and Completed.",
+      "html": "<span class=\"ds-status\">REGISTRATION OPEN</span>",
       "css": ".ds-status{display:inline-flex;padding:8px 11px;border:1px solid #161713;border-radius:999px;color:#161713;font:600 10px/1 ui-monospace,monospace;letter-spacing:.06em}"
     },
     {
@@ -60,9 +61,9 @@
     {
       "name": "Navigation",
       "kind": "nav",
-      "description": "Title-case wordmark, compact index links, and a persistent blue action.",
-      "html": "<nav class=\"ds-nav\"><strong>Roam</strong><a href=\"#\">Hikes</a><a class=\"ds-nav-cta\" href=\"#\">Join a Hike ↗</a></nav>",
-      "css": ".ds-nav{display:flex;align-items:center;gap:28px;padding:16px;background:#F2F0E8;color:#161713;font:560 14px/1 Arial,sans-serif}.ds-nav strong{margin-right:auto;font-size:28px;letter-spacing:-.04em}.ds-nav a{color:inherit;text-decoration:none}.ds-nav-cta{padding:13px 18px;border-radius:999px;background:#1647FF;color:#fff!important;font:650 11px/1 ui-monospace,monospace}.ds-nav a:focus-visible{outline:3px solid #1647FF;outline-offset:3px}"
+      "description": "A lightly frosted warm-paper navigation with a Cabinet Grotesk wordmark, compact index links, and a persistent blue action.",
+      "html": "<nav class=\"ds-nav\"><strong>Roam</strong><a href=\"#\">Hikes</a><a href=\"#\">How It Works</a><a class=\"ds-nav-cta\" href=\"#\">JOIN A HIKE ↗</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:28px;padding:11px 18px;border:1px solid rgba(255,253,246,.62);border-radius:4px;background:rgba(242,240,232,.78);backdrop-filter:blur(22px);color:#161713;font:560 14px/1 Arial,sans-serif}.ds-nav strong{margin-right:auto;font:500 28px/1 'Cabinet Grotesk',Arial,sans-serif;letter-spacing:-.04em}.ds-nav a{color:inherit;text-decoration:none}.ds-nav-cta{padding:13px 18px;border-radius:999px;background:#1647FF;color:#fff!important;font:650 11px/1 ui-monospace,monospace}.ds-nav a:focus-visible{outline:3px solid #1647FF;outline-offset:3px}"
     },
     {
       "name": "RSVP Field",
@@ -74,14 +75,14 @@
   ],
   "narrative": {
     "northStar": "The Weekend Field Issue",
-    "overview": "Roam feels like a small-run outdoor magazine assembled by people who actually went outside together. The title-case wordmark is a deliberate identity rule. Trova’s image-led pacing is retained while luxury-expedition polish is removed.",
+    "overview": "Roam feels like a small-run outdoor magazine assembled by people who actually went outside together. The navigation wordmark and photographic hero both use the title-case Roam treatment. Trova’s image-led pacing and Cabinet Grotesk heading style are retained while luxury-expedition polish is removed.",
     "keyCharacteristics": ["Oversized sans-serif wordmarks", "Full-bleed restrained nature photography", "Warm paper fields", "Electric-blue route and action marks", "Technical mono logistics", "Almost no card chrome"],
     "rules": [
       { "name": "Blue Means Movement", "body": "Electric blue appears only where the visitor can act, navigate, or follow a route-like line.", "section": "colors" },
       { "name": "Two Registers", "body": "Human invitations use confident sans-serif; dates, coordinates, distances, and hike numbers use compact mono.", "section": "typography" },
-      { "name": "Flat Publication", "body": "If an element needs separation, use spacing, a rule, or a change of field—not a floating panel.", "section": "elevation" }
+      { "name": "Flat Publication", "body": "If an element needs separation, use spacing, a rule, or a change of field. The lightly frosted navigation is the single floating-surface exception.", "section": "elevation" }
     ],
-    "dos": ["Treat route state, distance, date, and difficulty as first-class content.", "Let one strong photograph own a viewport or section.", "Mark illustrative and unverified sample content near the relevant claim.", "Use restrained transitions and a single route-drawing moment."],
-    "donts": ["Introduce glossy gradients, fake film scratches, glass panels, or decorative shadows.", "Use commercial travel-agency language or athletic performance framing.", "Place every section in rounded cards.", "Imply that a sample hike, route, or registration endpoint is confirmed.", "Set the Roam name in all caps."]
+    "dos": ["Treat route state, distance, date, and difficulty as first-class content.", "Let one strong photograph own a viewport or section.", "Keep operational route and RSVP states concise.", "Use restrained transitions: the route-drawing moment and the slow Next Outing photograph frost on CTA hover."],
+    "donts": ["Introduce glossy gradients, fake film scratches, decorative shadows, or glass panels beyond the restrained navigation surface.", "Use commercial travel-agency language or athletic performance framing.", "Place every section in rounded cards.", "Add warning copy that overwhelms the hike itself.", "Set the Roam name in all caps; keep the navigation and photographic hero in title case."]
   }
 }

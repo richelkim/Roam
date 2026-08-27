@@ -102,12 +102,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="field-note-band page-shell">
-        <p className="technical blue">WHY Roam</p>
-        <blockquote>“A hike is just long enough to get past small talk.”</blockquote>
-        <p>No networking. No pace leaderboard. Just a good trail, a clear plan, and a group small enough to learn everyone’s name.</p>
-      </section>
-
       <section className="final-cta">
         <Image src="/images/riverwood-river.jpg" alt="View of a quiet river bend in an Ontario woodland" fill sizes="100vw" className="cover-image" />
         <div className="cta-wash" />

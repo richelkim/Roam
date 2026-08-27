@@ -70,7 +70,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 
 .site-header {
   min-height: 64px;
-  width: min(1400px, calc(100vw - 48px));
+  width: min(1280px, calc(100vw - 72px));
   padding: 0 18px 0 22px;
   display: flex;
   align-items: center;
@@ -82,12 +82,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   right: 0;
   margin-inline: auto;
   z-index: 50;
-  background: rgba(242, 240, 232, .78);
-  border: 1px solid rgba(255, 253, 246, .62);
+  background: var(--paper);
+  border: 1px solid var(--rule);
   border-radius: 4px;
   color: var(--ink);
-  -webkit-backdrop-filter: blur(22px);
-  backdrop-filter: blur(22px);
 }
 
 .site-wordmark, .footer-wordmark {
@@ -362,7 +360,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 @media (max-width: 700px) {
-  .site-header { width: calc(100vw - 20px); min-height: 104px; top: 10px; padding: 11px 12px; align-items: flex-start; gap: 14px; background: rgba(242, 240, 232, .86); }
+  .site-header { width: calc(100vw - 20px); min-height: 104px; top: 10px; padding: 11px 12px; align-items: flex-start; gap: 14px; }
   .site-wordmark { font-size: 1.7rem; margin-top: 4px; }
   .site-nav { gap: 12px 16px; justify-content: flex-end; flex-wrap: wrap; font-size: .7rem; }
   .nav-cta { width: 100%; min-height: 38px; justify-content: center; padding: 10px 14px; }

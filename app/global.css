@@ -141,7 +141,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .round-link { min-width: 230px; padding: 16px 19px; border: 1px solid currentColor; }
 .round-link:hover { color: var(--ink); background: white; }
 
-.intro { align-items: start; }
+.intro { align-items: start; padding-block: clamp(64px, 5vw, 88px); }
 .section-kicker { grid-column: 1 / span 3; margin: 14px 0 0; }
 .intro-copy { grid-column: 4 / span 6; }
 .intro-copy h2, .section-heading h2, .story-copy h2, .route-copy h2, .logistics h2, .detail-join h2, .split-copy h2 {

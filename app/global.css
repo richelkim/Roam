@@ -154,6 +154,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   text-wrap: balance;
 }
 .intro-copy > p { margin: 0; max-width: 650px; font-size: clamp(1.12rem, 1.65vw, 1.55rem); line-height: 1.45; }
+.intro-copy > p + p { margin-top: 1em; }
 .intro-route { grid-column: 10 / span 3; width: 100%; margin-top: -28px; }
 .route-mark { fill: none; stroke: var(--blue); stroke-width: 4; overflow: visible; }
 .route-mark circle { fill: var(--paper); stroke-width: 4; }

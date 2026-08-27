@@ -18,7 +18,6 @@ export default function HikesPage() {
           <p className="technical">TORONTO + GTA</p>
         </div>
         <h1>Hikes</h1>
-        <p className="index-intro">A few hours outside, a clear plan, and a group of people who were strangers that morning.</p>
       </header>
 
       <section className="hike-index page-shell" aria-label="Hike listings">

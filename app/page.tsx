@@ -18,9 +18,6 @@ export default function HomePage() {
           className="hero-image"
         />
         <div className="hero-wash" />
-        <div className="hero-topline technical">
-          <span>OPEN TO EVERYONE</span>
-        </div>
         <div className="hero-copy">
           <h1 id="home-title">Roam</h1>
           <div className="hero-bottom">

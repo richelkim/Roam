@@ -295,6 +295,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .how-main { padding-top: 40px; }
 .how-big-steps { margin: 0; padding: 0; list-style: none; }
 .how-big-steps > li { display: grid; grid-template-columns: 2fr 10fr; gap: 24px; padding: 70px 0 90px; border-top: 1px solid var(--ink); }
+.how-big-steps > li:first-child { border-top: 0; }
 .how-big-steps h2 { max-width: 900px; margin: 16px 0 24px; font-family: var(--display); font-size: clamp(3rem, 6.2vw, 6.5rem); font-weight: 500; letter-spacing: -.03em; line-height: .95; }
 .how-big-steps div > p:last-child { max-width: 650px; font-size: 1.1rem; }
 .split-image-copy { display: grid; grid-template-columns: 1.05fr .95fr; min-height: 720px; background: var(--forest-deep); color: white; }

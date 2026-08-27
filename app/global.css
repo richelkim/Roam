@@ -21,6 +21,7 @@
   --forest: #2f4635;
   --forest-deep: #17251c;
   --blue: #1647ff;
+  --full: #c51f28;
   --mist: #d9ddd0;
   --white: #fffdf6;
   --rule: rgba(22, 23, 19, 0.24);
@@ -63,6 +64,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 .blue { color: var(--blue); }
+.status-full { color: var(--full); }
 .page-shell { width: var(--page); margin-inline: auto; }
 .page-grid { width: var(--page); margin-inline: auto; display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
 .section-space { padding-top: clamp(80px, 10vw, 150px); padding-bottom: clamp(80px, 10vw, 150px); }

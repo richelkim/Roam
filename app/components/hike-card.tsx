@@ -11,7 +11,7 @@ export function HikeCard({ hike }: { hike: Hike }) {
       <div className="hike-card-copy">
         <div className="hike-card-top technical">
           <span>Roam {hike.number}</span>
-          <span className={hike.state === 'upcoming' ? 'blue' : ''}>{hike.registrationLabel}</span>
+          <span className={hike.state === 'upcoming' ? 'blue' : hike.state === 'full' ? 'status-full' : ''}>{hike.registrationLabel}</span>
         </div>
         <h3><Link href={`/hikes/${hike.slug}`}>{hike.title}</Link></h3>
         <p>{hike.location}</p>

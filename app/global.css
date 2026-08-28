@@ -190,7 +190,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .featured-section .text-link:is(:hover, :focus-visible, :active) { color: var(--white); }
 
 .how-preview { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(44px, 8vw, 140px); }
-.intro + .how-preview { padding-top: clamp(24px, 2vw, 32px); }
+.intro + .how-preview { padding-top: clamp(48px, 4vw, 64px); padding-bottom: clamp(56px, 8vw, 118px); }
 .section-heading > p:first-child { margin: 0 0 22px; }
 .section-heading.horizontal { display: flex; justify-content: space-between; align-items: end; gap: 28px; }
 .steps-list { margin: 0; padding: 0; list-style: none; }

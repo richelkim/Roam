@@ -2,19 +2,7 @@
 
 For people who like going somewhere.
 
-Roam is a Toronto-area hiking club. 
-
-## Content model
-
-The single typed Hikes collection lives in `app/content/hikes.ts`. Each record supports:
-
-- `upcoming`, `full`, and `completed` states
-- date, time, location, distance, duration, elevation, and difficulty
-- meeting, transportation, and packing information
-- photographs
-- optional `stravaEmbedUrl` or `stravaRouteUrl`
-
-Completed entries remain available in the collection for future use but are not surfaced in V1.
+Roam is a Toronto-area hiking club made by students.
 
 ## RSVP configuration
 

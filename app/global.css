@@ -71,9 +71,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .cover-image { object-fit: cover; }
 
 .site-header {
-  min-height: 64px;
+  min-height: 54px;
   width: calc(100vw - 44px);
-  padding: 0 18px 0 22px;
+  padding: 0 14px 0 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,8 +97,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   line-height: 1;
   letter-spacing: -.04em;
 }
+.site-wordmark { font-size: 1.65rem; }
 
-.site-nav { display: flex; align-items: center; gap: clamp(18px, 3vw, 42px); font-size: .84rem; font-weight: 560; }
+.site-nav { display: flex; align-items: center; gap: clamp(16px, 2.5vw, 34px); font-size: .76rem; font-weight: 560; }
 .site-nav > a:not(.nav-cta) { position: relative; }
 .site-nav > a:not(.nav-cta)::after { content: ''; position: absolute; left: 0; right: 100%; bottom: -4px; height: 2px; background: var(--blue); transition: right .25s ease-out; }
 .site-nav > a:not(.nav-cta):hover::after { right: 0; }
@@ -116,7 +117,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   text-transform: uppercase;
   transition: background-color .2s ease-out, color .2s ease-out, transform .2s ease-out;
 }
-.nav-cta { min-height: 42px; padding: 13px 18px; background: var(--blue); color: white; }
+.nav-cta { min-height: 36px; padding: 10px 15px; gap: 20px; background: var(--blue); color: white; font-size: .64rem; }
 .nav-cta:hover, .button-primary:hover { background: var(--forest-deep); transform: translateY(-2px); }
 
 .hero { min-height: 100svh; position: relative; overflow: hidden; color: white; background: var(--forest-deep); }
@@ -365,10 +366,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 @media (max-width: 700px) {
-  .site-header { width: calc(100vw - 20px); min-height: 104px; top: 10px; padding: 11px 12px; align-items: flex-start; gap: 14px; }
-  .site-wordmark { font-size: 1.7rem; margin-top: 4px; }
-  .site-nav { gap: 12px 16px; justify-content: flex-end; flex-wrap: wrap; font-size: .7rem; }
-  .nav-cta { width: 100%; min-height: 38px; justify-content: center; padding: 10px 14px; }
+  .site-header { width: calc(100vw - 20px); min-height: 92px; top: 10px; padding: 9px 10px; align-items: flex-start; gap: 10px; }
+  .site-wordmark { font-size: 1.5rem; margin-top: 3px; }
+  .site-nav { gap: 8px 12px; justify-content: flex-end; flex-wrap: wrap; font-size: .66rem; }
+  .nav-cta { width: 100%; min-height: 36px; justify-content: center; padding: 9px 12px; gap: 16px; font-size: .64rem; }
   .hero { min-height: 100svh; }
   .hero-copy { bottom: 40px; }
   .hero h1 { font-size: 68px; margin-bottom: 24px; }

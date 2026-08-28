@@ -13,7 +13,6 @@ export default function HowItWorksPage() {
       <header className="index-hero page-shell how-hero">
         <div className="index-title-row"><p className="technical blue">FIRST TIME?</p><p className="technical">START HERE</p></div>
         <h1>How it<br />works</h1>
-        <p className="index-intro">You don’t need a membership, a full gear closet, or a friend who already knows everyone.</p>
       </header>
 
       <section className="how-main page-shell">

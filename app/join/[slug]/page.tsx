@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getHike } from '../../content/hikes'
+import { formatHikeNumber } from '../../content/site'
 import { RsvpPreview } from './rsvp-preview'
 
 export const metadata: Metadata = { title: 'Join a Hike' }
@@ -27,7 +28,7 @@ export default async function JoinPage({ params }: { params: Promise<{ slug: str
   return (
     <main className="join-page page-shell">
       <header>
-        <p className="technical blue">Roam {hike.number} · RSVP</p>
+        <p className="technical blue">{formatHikeNumber(hike.number)} · RSVP</p>
         <h1>Join<br />{hike.title}</h1>
         <p>{hike.date} · {hike.time}<br />{hike.location}</p>
       </header>

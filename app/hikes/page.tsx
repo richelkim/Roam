@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
 import { HikeCard } from '../components/hike-card'
 import { hikes } from '../content/hikes'
+import { SITE_NAME } from '../content/site'
 
 export const metadata: Metadata = {
   title: 'Hikes',
-  description: 'Upcoming Roam hikes around Toronto and the Greater Toronto Area.',
+  description: `Upcoming hikes from ${SITE_NAME} around Toronto and the Greater Toronto Area.`,
 }
 
 export default function HikesPage() {

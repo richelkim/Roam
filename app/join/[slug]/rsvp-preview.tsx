@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, type ChangeEvent, type FormEvent } from 'react'
+import { SITE_NAME } from '../../content/site'
 
 type FormControl = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
 
@@ -74,7 +75,7 @@ export function RsvpPreview({ hikeName, hikeId }: { hikeName: string; hikeId: st
       <div className="risk-section">
         <details className="risk-disclosure">
           <summary>Participation &amp; Assumption of Risk</summary>
-          <p>Hiking and outdoor activities involve inherent risks, including uneven terrain, slips and falls, changing weather, wildlife, physical exertion, and travel to and from trail locations. By joining a Roam hike, you confirm that you are participating voluntarily and are responsible for deciding whether the hike is appropriate for your fitness and experience level. You agree to follow reasonable safety instructions from the hike organizers and to bring suitable footwear, clothing, water, and any personal medication or equipment you may need.</p>
+          <p>Hiking and outdoor activities involve inherent risks, including uneven terrain, slips and falls, changing weather, wildlife, physical exertion, and travel to and from trail locations. By joining a {SITE_NAME} outing, you confirm that you are participating voluntarily and are responsible for deciding whether the hike is appropriate for your fitness and experience level. You agree to follow reasonable safety instructions from the hike organizers and to bring suitable footwear, clothing, water, and any personal medication or equipment you may need.</p>
         </details>
         <div className="checkbox-field">
           <label className={`check-label ${isInvalid('risk_acknowledgement') ? `is-invalid validation-shake-${validationAttempt % 2}` : ''}`}><input required type="checkbox" name="risk_acknowledgement" aria-invalid={isInvalid('risk_acknowledgement') || undefined} aria-describedby={isInvalid('risk_acknowledgement') ? 'risk-acknowledgement-error' : undefined} onChange={handleFieldChange} /> <span>I have read and understand the Participation &amp; Assumption of Risk statement above. <span className="required-mark" aria-hidden="true">*</span></span></label>

@@ -1,5 +1,5 @@
 ---
-name: Roam
+name: UTM Hike
 description: A Toronto hiking club presented like a small independent outdoor publication.
 colors:
   paper: "#F2F0E8"
@@ -48,13 +48,13 @@ components:
     padding: "13px 19px"
 ---
 
-# Design System: Roam
+# Design System: UTM Hike
 
 ## Overview
 
 **Creative North Star: “The Weekend Field Issue”**
 
-Roam feels like a small-run outdoor magazine assembled by people who actually went outside together. The navigation wordmark and photographic hero both keep the brand in title case, with the hero acting as the larger editorial title. The system adapts Trova’s image-led pacing and bold hierarchy, then strips away the luxury-expedition polish: local terrain is photographed with restraint, logistics sit beside expressive headlines, and the electric-blue route trace becomes the recurring editorial mark.
+UTM Hike feels like a small-run outdoor magazine assembled by people who actually went outside together. The navigation wordmark and photographic hero keep “UTM” uppercase and “Hike” in title case, with the hero acting as the larger editorial title. The system adapts Trova’s image-led pacing and bold hierarchy, then strips away the luxury-expedition polish: local terrain is photographed with restraint, logistics sit beside expressive headlines, and the electric-blue route trace becomes the recurring editorial mark.
 
 The personality is youthful, social, direct, and slightly imperfect without resorting to fake distress. **Key Characteristics:** oversized sans-serif wordmarks; full-bleed nature photography; warm paper fields; blue links and route marks; technical mono labels; hard editorial rules; almost no card chrome.
 
@@ -117,4 +117,4 @@ The wordmark returns Home. Desktop navigation is a compact horizontal index cont
 - **Don't** use commercial travel-agency language or athletic performance framing.
 - **Don't** place every section in rounded cards.
 - **Don't** add warning copy that overwhelms the hike itself.
-- **Don't** set the Roam name in all caps; keep the navigation and photographic hero in title case.
+- **Don't** change the brand casing; keep “UTM” uppercase and “Hike” in title case in the navigation and photographic hero.

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Hike } from '../content/hikes'
+import { formatHikeNumber } from '../content/site'
 
 export function HikeCard({ hike }: { hike: Hike }) {
   return (
@@ -10,7 +11,7 @@ export function HikeCard({ hike }: { hike: Hike }) {
       </Link>
       <div className="hike-card-copy">
         <div className="hike-card-top technical">
-          <span>Roam {hike.number}</span>
+          <span>{formatHikeNumber(hike.number)}</span>
           <span className={hike.state === 'upcoming' ? 'blue' : hike.state === 'full' ? 'status-full' : ''}>{hike.registrationLabel}</span>
         </div>
         <h3><Link href={`/hikes/${hike.slug}`}>{hike.title}</Link></h3>

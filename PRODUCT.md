@@ -8,15 +8,15 @@ web
 
 ## Users
 
-Roam is open to everyone, with University of Toronto students as its primary audience. It serves curious people who want a low-friction way to explore Toronto-area trails and meet new people without joining a commercial tour or formal membership organization.
+UTM Hike is open to everyone, with University of Toronto students as its primary audience. It serves curious people who want a low-friction way to explore Toronto-area trails and meet new people without joining a commercial tour or formal membership organization.
 
 ## Product Purpose
 
-Roam publishes upcoming local hikes, explains how the club works, and collects RSVPs. V1 should make a first-time visitor understand the club and feel comfortable joining a hike within a few minutes.
+UTM Hike publishes upcoming local hikes, explains how the club works, and collects RSVPs. V1 should make a first-time visitor understand the club and feel comfortable joining a hike within a few minutes.
 
 ## Positioning
 
-Roam is a small, social hiking club and independent outdoor publication: local outings are presented as shared, approachable experiences rather than products, athletic achievements, or networking events.
+UTM Hike is a small, social hiking club and independent outdoor publication: local outings are presented as shared, approachable experiences rather than products, athletic achievements, or networking events.
 
 ## Operating Context
 
@@ -34,7 +34,7 @@ Visitors browse on desktop or mobile, often from campus or while coordinating we
 
 ## Brand Commitments
 
-The product name, navigation wordmark, and primary photographic hero are styled “Roam.” The primary line is “For people who like going places.” The voice is direct, welcoming, curious, and unpolished in a deliberate editorial way. The free Trova Framer template is the structural starting point; the implementation adapts its image-led hero, editorial pacing, hike listing, process section, and full-bleed closing call to action rather than inventing a generic startup layout. V1 deliberately excludes an Archive page and Archive navigation.
+The product name, navigation wordmark, and primary photographic hero are styled “UTM Hike.” The primary line is “For people who like going places.” The voice is direct, welcoming, curious, and unpolished in a deliberate editorial way. The free Trova Framer template is the structural starting point; the implementation adapts its image-led hero, editorial pacing, hike listing, process section, and full-bleed closing call to action rather than inventing a generic startup layout. V1 deliberately excludes an Archive page and Archive navigation.
 
 ## Evidence on Hand
 
@@ -50,4 +50,4 @@ The repository contains generated editorial photography for the Riverwood Loop e
 
 ## Accessibility & Inclusion
 
-Roam is open to everyone. Pages must remain keyboard-navigable, readable over photography, responsive down to mobile widths, and clear about difficulty, risk, transportation, and what participants should bring.
+UTM Hike is open to everyone. Pages must remain keyboard-navigable, readable over photography, responsive down to mobile widths, and clear about difficulty, risk, transportation, and what participants should bring.

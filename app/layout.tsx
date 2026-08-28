@@ -6,20 +6,21 @@ import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
+import { SITE_NAME } from './content/site'
 import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Roam · Toronto-area hiking club',
-    template: '%s · Roam',
+    default: `${SITE_NAME} · Toronto-area hiking club`,
+    template: `%s · ${SITE_NAME}`,
   },
   description: 'For people who like going places. A Toronto-area hiking club, open to everyone and built around curious company.',
   openGraph: {
-    title: 'Roam · Toronto-area hiking club',
+    title: `${SITE_NAME} · Toronto-area hiking club`,
     description: 'For people who like going places.',
     url: baseUrl,
-    siteName: 'Roam',
+    siteName: SITE_NAME,
     locale: 'en_CA',
     type: 'website',
   },

@@ -1,6 +1,6 @@
-# Roam
+# UTM Hike
 
-Roam is a Toronto + GTA hiking club made by students, for everyone.
+UTM Hike is a Toronto + GTA hiking club made by students, for everyone.
 
 ## RSVP configuration
 

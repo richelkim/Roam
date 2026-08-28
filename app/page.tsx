@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { HOME_ROUTE_TRACE, RouteTrace } from './components/route-trace'
 import { hikes } from './content/hikes'
+import { formatHikeNumber, SITE_NAME } from './content/site'
 
 const featured = hikes.find((hike) => hike.slug === 'riverwood-loop')!
 
@@ -19,7 +20,7 @@ export default function HomePage() {
         />
         <div className="hero-wash" />
         <div className="hero-copy">
-          <h1 id="home-title">Roam</h1>
+          <h1 id="home-title">{SITE_NAME}</h1>
           <div className="hero-bottom">
             <p className="hero-tagline">For people who<br />like going places.</p>
           </div>
@@ -32,7 +33,7 @@ export default function HomePage() {
             <p className="technical featured-label">UPCOMING HIKE</p>
             <span className="status-dot">REGISTRATION OPEN</span>
           </div>
-          <p className="hike-number technical">Roam {featured.number}</p>
+          <p className="hike-number technical">{formatHikeNumber(featured.number)}</p>
           <h2 id="featured-title">{featured.title}</h2>
           <p className="featured-location">{featured.location}</p>
           <div className="spec-grid">
@@ -57,7 +58,7 @@ export default function HomePage() {
         <div className="intro-copy">
           <h2>We take the long way out of the city.</h2>
           <p>
-            Roam is a Toronto + GTA hiking club started by students at the
+            {SITE_NAME} is a Toronto + GTA hiking club started by students at the
             University of Toronto. We welcome all hiking levels (we’re
             definitely not experts ourselves). The club began primarily
             because we think it’s important to make it easier to get outside,
@@ -81,7 +82,7 @@ export default function HomePage() {
         <ol className="steps-list">
           <li><span>01</span><div><h3>Find a hike</h3><p>Read the pace, distance, transit plan, and what the day is likely to feel like.</p></div></li>
           <li><span>02</span><div><h3>Put your name down</h3><p>Share a few details through a short RSVP so the group can plan well.</p></div></li>
-          <li><span>03</span><div><h3>Show up and roam</h3><p>Meet at the shared point, walk together, and leave with a new part of the city.</p></div></li>
+          <li><span>03</span><div><h3>Show up and hike</h3><p>Meet at the shared point, walk together, and leave with a new part of the city.</p></div></li>
         </ol>
       </section>
 

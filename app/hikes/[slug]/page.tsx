@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation'
 import { HikeUsefulDetails } from '../../components/hike-useful-details'
 import { RouteMark } from '../../components/route-mark'
 import { getHike, hikes } from '../../content/hikes'
+import { formatHikeNumber } from '../../content/site'
 
 export function generateStaticParams() {
   return hikes.filter((hike) => hike.state !== 'completed').map((hike) => ({ slug: hike.slug }))
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const hike = getHike(slug)
   if (!hike) return {}
   return {
-    title: `${hike.title} · Roam ${hike.number}`,
+    title: `${hike.title} · ${formatHikeNumber(hike.number)}`,
     description: hike.shortDescription,
   }
 }
@@ -32,7 +33,7 @@ export default async function HikePage({ params }: { params: Promise<{ slug: str
         <div className="hero-wash detail" />
         <div className="hike-hero-copy">
           <div className="hike-hero-meta technical">
-            <span>Roam {hike.number}</span>
+            <span>{formatHikeNumber(hike.number)}</span>
             <span>{hike.registrationLabel}</span>
           </div>
           <h1>{hike.title}</h1>

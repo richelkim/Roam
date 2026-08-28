@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-08-27T22:00:00-04:00",
-  "title": "Design System: Roam",
+  "title": "Design System: UTM Hike",
   "extensions": {
     "colorMeta": {
       "paper": { "role": "neutral", "displayName": "Warm Field Paper", "canonical": "#F2F0E8", "tonalRamp": ["#272823", "#444640", "#666860", "#898b82", "#adafa7", "#cecfc8", "#e3e2dc", "#f2f0e8"] },
@@ -62,7 +62,7 @@
       "name": "Navigation",
       "kind": "nav",
       "description": "A flat warm-paper editorial navigation with a Cabinet Grotesk wordmark, compact index links, a quiet rule, and a persistent blue action.",
-      "html": "<nav class=\"ds-nav\"><strong>Roam</strong><a href=\"#\">How It Works</a><a class=\"ds-nav-cta\" href=\"#\">JOIN A HIKE ↗</a></nav>",
+      "html": "<nav class=\"ds-nav\"><strong>UTM Hike</strong><a href=\"#\">How It Works</a><a class=\"ds-nav-cta\" href=\"#\">JOIN A HIKE ↗</a></nav>",
       "css": ".ds-nav{display:flex;align-items:center;gap:28px;padding:11px 18px;border:1px solid rgba(22,23,19,.24);border-radius:4px;background:#f2f0e8;color:#161713;font:560 14px/1 Arial,sans-serif}.ds-nav strong{margin-right:auto;font:500 28px/1 'Cabinet Grotesk',Arial,sans-serif;letter-spacing:-.04em}.ds-nav a{color:inherit;text-decoration:none}.ds-nav-cta{padding:13px 18px;border-radius:999px;background:#1647FF;color:#fff!important;font:650 11px/1 ui-monospace,monospace}.ds-nav a:focus-visible{outline:3px solid #1647FF;outline-offset:3px}"
     },
     {
@@ -75,7 +75,7 @@
   ],
   "narrative": {
     "northStar": "The Weekend Field Issue",
-    "overview": "Roam feels like a small-run outdoor magazine assembled by people who actually went outside together. The navigation wordmark and photographic hero both use the title-case Roam treatment. Trova’s image-led pacing and Cabinet Grotesk heading style are retained while luxury-expedition polish is removed.",
+    "overview": "UTM Hike feels like a small-run outdoor magazine assembled by people who actually went outside together. The navigation wordmark and photographic hero keep UTM uppercase and Hike in title case. Trova’s image-led pacing and Cabinet Grotesk heading style are retained while luxury-expedition polish is removed.",
     "keyCharacteristics": ["Oversized sans-serif wordmarks", "Full-bleed restrained nature photography", "Warm paper fields", "Electric-blue route and action marks", "Technical mono logistics", "Almost no card chrome"],
     "rules": [
       { "name": "Blue Means Movement", "body": "Electric blue appears only where the visitor can act, navigate, or follow a route-like line.", "section": "colors" },
@@ -83,6 +83,6 @@
       { "name": "Flat Publication", "body": "If an element needs separation, use spacing, a rule, or a change of field. The lightly frosted navigation is the single floating-surface exception.", "section": "elevation" }
     ],
     "dos": ["Treat route state, distance, date, and difficulty as first-class content.", "Let one strong photograph own a viewport or section.", "Keep operational route and RSVP states concise.", "Use restrained transitions: the route-drawing moment and the slow Next Outing photograph frost on CTA hover."],
-    "donts": ["Introduce glossy gradients, fake film scratches, decorative shadows, or glass panels beyond the restrained navigation surface.", "Use commercial travel-agency language or athletic performance framing.", "Place every section in rounded cards.", "Add warning copy that overwhelms the hike itself.", "Set the Roam name in all caps; keep the navigation and photographic hero in title case."]
+    "donts": ["Introduce glossy gradients, fake film scratches, decorative shadows, or glass panels beyond the restrained navigation surface.", "Use commercial travel-agency language or athletic performance framing.", "Place every section in rounded cards.", "Add warning copy that overwhelms the hike itself.", "Change the brand casing; keep UTM uppercase and Hike in title case in the navigation and photographic hero."]
   }
 }

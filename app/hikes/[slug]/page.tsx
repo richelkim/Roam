@@ -92,20 +92,6 @@ export default async function HikePage({ params }: { params: Promise<{ slug: str
           <article><span className="technical">BRING</span><ul>{hike.whatToBring.map((item) => <li key={item}>{item}</li>)}</ul></article>
         </div>
       </section>
-
-      <section className="detail-gallery" aria-label="Hike photographs">
-        {hike.galleryImages.map((src, index) => (
-          <div className="detail-gallery-image" key={src}>
-            <Image src={src} alt={`Field photograph ${index + 1} for ${hike.title}`} fill sizes="50vw" className="cover-image" />
-          </div>
-        ))}
-      </section>
-
-      <section className="detail-join page-shell">
-        <p className="technical blue">Roam {hike.number}</p>
-        <h2>For people who like going somewhere.</h2>
-        {hike.state === 'upcoming' ? <Link className="button-primary" href={`/join/${hike.slug}`}>JOIN THIS HIKE <span aria-hidden="true">↗</span></Link> : null}
-      </section>
     </main>
   )
 }

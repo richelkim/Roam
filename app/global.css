@@ -144,7 +144,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .intro { align-items: start; padding-block: clamp(64px, 5vw, 88px); }
 .section-kicker { grid-column: 1 / span 3; margin: 14px 0 0; }
 .intro-copy { grid-column: 1 / span 9; max-width: 1120px; }
-.intro-copy h2, .section-heading h2, .story-copy h2, .route-copy h2, .logistics h2, .detail-join h2, .split-copy h2 {
+.intro-copy h2, .section-heading h2, .story-copy h2, .route-copy h2, .logistics h2, .split-copy h2 {
   margin: 0 0 28px;
   font-family: var(--display);
   font-size: clamp(2.8rem, 5.8vw, 6rem);
@@ -277,12 +277,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .logistics-grid article:last-child { border-right: 0; }
 .logistics-grid p, .logistics-grid ul { margin-top: 54px; font-size: 1.05rem; }
 .logistics-grid ul { padding-left: 18px; }
-.detail-gallery { display: grid; grid-template-columns: repeat(2, 1fr); min-height: 700px; }
-.detail-gallery-image { position: relative; min-height: 700px; overflow: hidden; }
-.detail-gallery-image img { filter: saturate(.78); }
-.detail-join { padding-top: 130px; padding-bottom: 140px; display: flex; flex-direction: column; align-items: center; text-align: center; }
-.detail-join h2 { max-width: 1000px; }
-
 .how-hero h1 { font-size: clamp(6rem, 16vw, 15rem); line-height: .72; }
 .how-main { padding-top: 40px; }
 .how-big-steps { margin: 0; padding: 0; list-style: none; }
@@ -340,8 +334,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .hike-spec-band div:nth-child(-n+3) { border-bottom: 1px solid var(--rule); }
   .story-block .story-copy { grid-column: 4 / span 9; }
   .route-poster { min-height: 620px; }
-  .detail-gallery, .logistics-grid { grid-template-columns: 1fr; }
-  .detail-gallery-image { min-height: 70vw; }
+  .logistics-grid { grid-template-columns: 1fr; }
   .logistics-grid article { min-height: 0; padding: 26px 0 36px !important; border-right: 0; border-bottom: 1px solid var(--rule); }
   .logistics-grid p, .logistics-grid ul { margin-top: 28px; }
   .join-page { grid-template-columns: 1fr; }
@@ -392,8 +385,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .route-copy { padding: 72px 22px; }
   .route-poster-bottom strong { font-size: 3.7rem; }
   .section-heading.horizontal { align-items: flex-start; flex-direction: column; }
-  .detail-gallery { grid-template-columns: 1fr; }
-  .detail-gallery-image { min-height: 78vw; }
   .how-big-steps > li { grid-template-columns: 48px 1fr; padding: 36px 0 44px; }
   .how-big-steps h2 { font-size: 2.7rem; }
   .split-image { min-height: 90vw; }

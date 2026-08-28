@@ -20,7 +20,6 @@ export type Hike = {
   transitInformation: string
   whatToBring: string[]
   heroImage: string
-  galleryImages: string[]
   imageAlt: string
   stravaEmbedUrl?: string
   stravaRouteUrl?: string
@@ -47,7 +46,6 @@ export const hikes: Hike[] = [
     transitInformation: 'A transit and carpool note will be shared with participants. The plan assumes departure from central Toronto.',
     whatToBring: ['1–1.5 L of water', 'Weather-ready layer', 'Trail shoes that can get muddy', 'A snack', 'Any personal medication'],
     heroImage: '/images/riverwood-river.jpg',
-    galleryImages: ['/images/bridge-notes.jpg', '/images/river-break.jpg'],
     imageAlt: 'Photograph of a wooded river bend in the Greater Toronto Area',
   },
   {
@@ -70,7 +68,6 @@ export const hikes: Hike[] = [
     transitInformation: 'Transportation details are shared with registered participants.',
     whatToBring: ['Water', 'Weather-ready layer', 'Comfortable trail shoes'],
     heroImage: '/images/roam-hero.jpg',
-    galleryImages: ['/images/bridge-notes.jpg'],
     imageAlt: 'Photograph of friends walking in a leafy ravine',
   },
   {
@@ -93,7 +90,6 @@ export const hikes: Hike[] = [
     transitInformation: 'This outing is complete.',
     whatToBring: ['Water', 'Weather-ready layer'],
     heroImage: '/images/river-break.jpg',
-    galleryImages: ['/images/riverwood-river.jpg', '/images/bridge-notes.jpg'],
     imageAlt: 'Photograph of friends resting beside an Ontario river',
   },
 ]

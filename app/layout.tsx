@@ -14,10 +14,10 @@ export const metadata: Metadata = {
     default: 'Roam · Toronto-area hiking club',
     template: '%s · Roam',
   },
-  description: 'For people who like going somewhere. A Toronto-area hiking club, open to everyone and built around curious company.',
+  description: 'For people who like going places. A Toronto-area hiking club, open to everyone and built around curious company.',
   openGraph: {
     title: 'Roam · Toronto-area hiking club',
-    description: 'For people who like going somewhere.',
+    description: 'For people who like going places.',
     url: baseUrl,
     siteName: 'Roam',
     locale: 'en_CA',

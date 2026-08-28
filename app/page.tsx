@@ -21,7 +21,7 @@ export default function HomePage() {
         <div className="hero-copy">
           <h1 id="home-title">Roam</h1>
           <div className="hero-bottom">
-            <p className="hero-tagline">For people who<br />like going somewhere.</p>
+            <p className="hero-tagline">For people who<br />like going places.</p>
           </div>
         </div>
       </section>

@@ -34,7 +34,7 @@ Visitors browse on desktop or mobile, often from campus or while coordinating we
 
 ## Brand Commitments
 
-The product name, navigation wordmark, and primary photographic hero are styled “Roam.” The primary line is “For people who like going somewhere.” The voice is direct, welcoming, curious, and unpolished in a deliberate editorial way. The free Trova Framer template is the structural starting point; the implementation adapts its image-led hero, editorial pacing, hike listing, process section, and full-bleed closing call to action rather than inventing a generic startup layout. V1 deliberately excludes an Archive page and Archive navigation.
+The product name, navigation wordmark, and primary photographic hero are styled “Roam.” The primary line is “For people who like going places.” The voice is direct, welcoming, curious, and unpolished in a deliberate editorial way. The free Trova Framer template is the structural starting point; the implementation adapts its image-led hero, editorial pacing, hike listing, process section, and full-bleed closing call to action rather than inventing a generic startup layout. V1 deliberately excludes an Archive page and Archive navigation.
 
 ## Evidence on Hand
 

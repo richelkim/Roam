@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div>
         <Link className="footer-wordmark" href="/">Roam</Link>
-        <p>For people who like going somewhere.</p>
+        <p>For people who like going places.</p>
       </div>
       <nav aria-label="Footer navigation">
         <Link href="/hikes">Hikes</Link>

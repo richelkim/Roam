@@ -101,7 +101,7 @@ export default function HomePage() {
         <div className="final-cta-copy">
           <p className="technical">NEXT OUTING</p>
           <h2>Come for the trail.<br />Stay for the people.</h2>
-          <Link className="button-primary inverse" href={`/hikes/${featured.slug}`}>JOIN A HIKE <span aria-hidden="true">↗</span></Link>
+          <Link className="button-primary inverse" href="/hikes">JOIN A HIKE <span aria-hidden="true">↗</span></Link>
         </div>
       </section>
     </>

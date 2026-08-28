@@ -79,13 +79,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .site-wordmark { font-size: 1.65rem; }
 .site-wordmark-only {
-  position: absolute;
+  position: fixed;
   top: 22px;
   left: 40px;
   z-index: 50;
-  color: var(--ink);
+  color: var(--white);
+  mix-blend-mode: difference;
 }
-body:has(.hike-hero) .site-wordmark-only { color: var(--white); }
 
 .button-primary, .round-link {
   display: inline-flex;

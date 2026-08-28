@@ -10,8 +10,8 @@ export default function HomePage() {
     <>
       <section className="hero" aria-labelledby="home-title">
         <Image
-          src="/images/roam-hero.jpg"
-          alt="Editorial photograph of friends walking through an Ontario ravine"
+          src="/images/roam-hero-mountain.png"
+          alt="Hikers crossing a meadow beside a mountain lake"
           fill
           priority
           sizes="100vw"

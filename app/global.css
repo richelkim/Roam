@@ -314,7 +314,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .rsvp-form .is-invalid:focus-visible { outline-color: var(--full); }
 .form-error { color: var(--full) !important; font-size: .78rem; font-weight: 500 !important; line-height: 1.35; }
 .risk-section { display: grid; gap: 18px; }
-.risk-disclosure { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
+.risk-disclosure { border-bottom: 1px solid var(--rule); }
 .risk-disclosure summary { cursor: pointer; list-style: none; position: relative; padding: 16px 40px 16px 0; font-weight: 550; }
 .risk-disclosure summary::-webkit-details-marker { display: none; }
 .risk-disclosure summary::after { content: '+'; position: absolute; right: 0; top: 12px; color: var(--blue); font-size: 1.5rem; font-weight: 400; }

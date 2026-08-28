@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import { HikeUsefulDetails } from '../../components/hike-useful-details'
 import { RouteMark } from '../../components/route-mark'
 import { getHike, hikes } from '../../content/hikes'
 
@@ -81,17 +82,7 @@ export default async function HikePage({ params }: { params: Promise<{ slug: str
         </div>
       </section>
 
-      <section className="logistics page-shell section-space">
-        <div className="section-heading horizontal">
-          <div><p className="technical blue">BEFORE YOU GO</p><h2>Useful details.</h2></div>
-          <p className="technical">WHAT TO EXPECT</p>
-        </div>
-        <div className="logistics-grid">
-          <article><span className="technical">MEETING</span><p>{hike.meetingInformation}</p></article>
-          <article><span className="technical">GETTING THERE</span><p>{hike.transitInformation}</p></article>
-          <article><span className="technical">BRING</span><ul>{hike.whatToBring.map((item) => <li key={item}>{item}</li>)}</ul></article>
-        </div>
-      </section>
+      <HikeUsefulDetails hike={hike} />
     </main>
   )
 }

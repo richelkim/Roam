@@ -27,15 +27,6 @@ export default function HomePage() {
       </section>
 
       <section className="featured-section" aria-labelledby="featured-title">
-        <div className="featured-photo">
-          <Image
-            src={featured.heroImage}
-            alt={featured.imageAlt}
-            fill
-            sizes="(max-width: 900px) 100vw, 58vw"
-            className="cover-image"
-          />
-        </div>
         <div className="featured-details">
           <div className="featured-heading-row">
             <p className="technical featured-label">UPCOMING HIKE</p>

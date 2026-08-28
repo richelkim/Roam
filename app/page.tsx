@@ -26,26 +26,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="intro page-grid section-space">
-        <div className="intro-copy">
-          <h2>We take the long way out of the city.</h2>
-          <p>
-            Roam is a Toronto + GTA hiking club started by students at the
-            University of Toronto. We welcome all hiking levels (we’re
-            definitely not experts ourselves). The club began primarily
-            because we think it’s important to make it easier to get outside,
-            meet new people, and have good conversations along the way.
-          </p>
-          <p>
-            We really believe in the power of doing things together, and hope
-            group hikes can create the kind of environment where people get
-            past small talk a little more naturally. Most importantly, it’s
-            about having fun and getting some exercise!
-          </p>
-        </div>
-        <RouteMark className="intro-route" />
-      </section>
-
       <section className="featured-section" aria-labelledby="featured-title">
         <div className="featured-photo">
           <Image
@@ -80,6 +60,26 @@ export default function HomePage() {
             <Link className="text-link" href="/hikes">ALL HIKES →</Link>
           </div>
         </div>
+      </section>
+
+      <section className="intro page-grid section-space">
+        <div className="intro-copy">
+          <h2>We take the long way out of the city.</h2>
+          <p>
+            Roam is a Toronto + GTA hiking club started by students at the
+            University of Toronto. We welcome all hiking levels (we’re
+            definitely not experts ourselves). The club began primarily
+            because we think it’s important to make it easier to get outside,
+            meet new people, and have good conversations along the way.
+          </p>
+          <p>
+            We really believe in the power of doing things together, and hope
+            group hikes can create the kind of environment where people get
+            past small talk a little more naturally. Most importantly, it’s
+            about having fun and getting some exercise!
+          </p>
+        </div>
+        <RouteMark className="intro-route" />
       </section>
 
       <section className="how-preview page-shell section-space" aria-labelledby="how-title">

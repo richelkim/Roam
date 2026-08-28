@@ -141,7 +141,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .round-link { min-width: 230px; padding: 16px 19px; border: 1px solid currentColor; }
 .round-link:hover { color: var(--ink); background: white; }
 
-.intro { align-items: start; padding-block: clamp(64px, 5vw, 88px); }
+.intro { align-items: start; padding: clamp(64px, 5vw, 88px) 0 clamp(24px, 2vw, 32px); }
 .section-kicker { grid-column: 1 / span 3; margin: 14px 0 0; }
 .intro-copy { grid-column: 1 / span 9; max-width: 1120px; }
 .intro-copy h2, .section-heading h2, .story-copy h2, .route-copy h2, .logistics h2, .split-copy h2 {
@@ -189,6 +189,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .text-link:hover { color: var(--forest-deep); }
 
 .how-preview { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(44px, 8vw, 140px); }
+.intro + .how-preview { padding-top: clamp(24px, 2vw, 32px); }
 .section-heading > p:first-child { margin: 0 0 22px; }
 .section-heading.horizontal { display: flex; justify-content: space-between; align-items: end; gap: 28px; }
 .steps-list { margin: 0; padding: 0; list-style: none; }

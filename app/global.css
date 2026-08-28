@@ -156,7 +156,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .intro-copy > p { margin: 0; max-width: 1000px; font-size: clamp(1.12rem, 1.65vw, 1.55rem); line-height: 1.45; }
 .intro-copy > p + p { margin-top: 1em; }
-.intro-route { grid-column: 10 / span 3; justify-self: end; width: 120%; margin: -28px 0 0; }
+.intro-route { grid-column: 10 / span 3; justify-self: end; width: 116%; margin: -28px 0 0; transform: translateX(clamp(8px, 1vw, 14px)); }
 .route-trace { position: relative; }
 .route-trace__svg { display: block; width: 100%; height: auto; overflow: visible; }
 .route-trace__path {
@@ -174,7 +174,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   stroke-width: 4;
   opacity: 0;
 }
-.route-trace__distance { position: absolute; inset-inline-start: 0; bottom: 3%; margin: 0; color: var(--blue); opacity: .72; }
+.route-trace__distance { position: absolute; inset-inline-start: 12%; bottom: 3%; margin: 0; color: var(--blue); opacity: .72; }
 .route-trace[data-visible='true'] .route-trace__point--start { animation: route-point-appear 140ms ease-out both; }
 .route-trace[data-visible='true'] .route-trace__path { animation: route-trace-draw 1.8s cubic-bezier(.22,.61,.36,1) 160ms both; }
 .route-trace[data-visible='true'] .route-trace__point--end { animation: route-point-appear 160ms ease-out 1.96s both; }
@@ -407,7 +407,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .round-link { min-width: 210px; }
   .page-grid { grid-template-columns: 1fr; }
   .section-kicker, .intro-copy, .intro-route, .story-block .story-copy { grid-column: 1; }
-  .intro-route { width: 96%; margin: 15px 0 0; }
+  .intro-route { width: 96%; margin: 15px 0 0; transform: none; }
   .featured-section { min-height: 0; }
   .featured-heading-row { margin-bottom: 42px; align-items: flex-start; }
   .featured-details h2 { font-size: 4.1rem; }

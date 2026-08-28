@@ -2,7 +2,7 @@
 
 For people who like going somewhere.
 
-Roam is a Toronto-area hiking club. V1 includes Home, Hikes, individual hike pages, How It Works, and an RSVP handoff prepared for Tally.
+Roam is a Toronto-area hiking club. 
 
 ## Content model
 
@@ -24,14 +24,4 @@ Copy `.env.example` to `.env.local` and configure:
 - `RSVP_RECIPIENT_EMAIL`: the private organizer notification recipient. This is intentionally server-only and must not be exposed in client code.
 
 Without a Tally URL, the site shows a clearly labelled, non-submitting RSVP preview.
-
-## Development
-
-```bash
-pnpm install
-pnpm dev
-```
-
-## Release note
-
-The site is an internal preview until the production Tally form is connected and the organizers are ready to share it.
+is an internal preview until the production Tally form is connected and the organizers are ready to share it.

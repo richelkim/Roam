@@ -73,10 +73,9 @@ export default function HomePage() {
             meet new people, and have good conversations along the way.
           </p>
           <p>
-            We really believe in the power of doing things together, and hope
-            group hikes can create the kind of environment where people get
-            past small talk a little more naturally. Most importantly, it’s
-            about having fun and getting some exercise!
+            We believe in the power of doing things together, and hope group
+            hikes can create a collective environment where people get to meet
+            each other. It’s about having fun and getting some exercise!
           </p>
         </div>
         <RouteMark className="intro-route" />

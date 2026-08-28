@@ -96,7 +96,7 @@ export default function HomePage() {
       </section>
 
       <section className="final-cta">
-        <Image src="/images/riverwood-river.jpg" alt="View of a quiet river bend in an Ontario woodland" fill sizes="100vw" className="cover-image" />
+        <Image src="/images/river-break.jpg" alt="Four people sitting together beside an Ontario river" fill sizes="100vw" className="cover-image final-cta-image" />
         <div className="cta-wash" />
         <div className="cta-glass" aria-hidden="true" />
         <div className="final-cta-copy">

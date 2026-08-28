@@ -199,6 +199,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .steps-list p { margin: 0; max-width: 520px; color: #40433c; }
 
 .final-cta { min-height: 84svh; position: relative; color: white; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; }
+.final-cta-image { object-position: 50% 66%; }
 .final-cta img { filter: saturate(.62) contrast(1.04); }
 .cta-wash { position: absolute; inset: 0; background: rgba(11, 29, 18, .56); }
 .cta-glass {
@@ -370,6 +371,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .spec-grid div:nth-child(3n), .spec-grid div:nth-child(3n + 2), .spec-grid div { padding: 14px 10px 14px 0; border-right: 1px solid rgba(255,255,255,.2); }
   .spec-grid div:nth-child(even) { padding-left: 12px; border-right: 0; }
   .final-cta { min-height: 72svh; }
+  .final-cta-image { object-position: 52% 70%; }
   .final-cta-copy h2 { font-size: 3.9rem; }
   .site-footer { grid-template-columns: 1fr; }
   .footer-meta { align-items: flex-start; }

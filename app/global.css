@@ -253,11 +253,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .final-cta-copy { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; padding: 48px 20px; }
 .final-cta-copy h2 { margin: 24px 0 38px; font-family: var(--display); font-size: clamp(3.8rem, 9vw, 9rem); letter-spacing: -.03em; line-height: .9; font-weight: 500; }
 
-.site-footer { padding: 32px 24px 8px; background: var(--ink); color: var(--paper); display: grid; grid-template-columns: 1.4fr .8fr 1fr; gap: 20px; }
+.site-footer { padding: 32px 24px 8px; background: var(--ink); color: var(--paper); display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 20px; }
 .footer-wordmark { display: block; font-size: clamp(4rem, 8vw, 8rem); }
 .site-footer p { margin: 12px 0 0; color: #bfc0b9; }
-.site-footer nav { display: flex; flex-direction: column; gap: 12px; padding-top: 0; align-self: end; }
-.site-footer nav a:hover { color: #8fa4ff; }
 .footer-meta { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; padding-top: 0; align-self: end; color: #a6a79f; }
 
 .index-hero { padding-top: clamp(124px, 12vw, 174px); padding-bottom: 72px; }
@@ -418,7 +416,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .final-cta-image { object-position: 52% 70%; }
   .final-cta-copy h2 { font-size: 3.9rem; }
   .site-footer { grid-template-columns: 1fr; padding: 24px 20px 8px; gap: 16px; }
-  .site-footer nav, .footer-meta { align-self: start; }
+  .footer-meta { align-self: start; }
   .footer-meta { align-items: flex-start; }
   .index-hero { padding-top: 154px; }
   .index-hero h1 { font-size: clamp(6.4rem, 31vw, 10rem); margin-top: 42px; }

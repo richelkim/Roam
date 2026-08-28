@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { RouteMark } from './components/route-mark'
+import { HOME_ROUTE_TRACE, RouteTrace } from './components/route-trace'
 import { hikes } from './content/hikes'
 
 const featured = hikes.find((hike) => hike.slug === 'riverwood-loop')!
@@ -78,7 +78,7 @@ export default function HomePage() {
             each other. It’s about having fun and getting some exercise!
           </p>
         </div>
-        <RouteMark className="intro-route" />
+        <RouteTrace path={HOME_ROUTE_TRACE} distance="8.5 KM" className="intro-route" />
       </section>
 
       <section className="how-preview page-shell section-space" aria-labelledby="how-title">

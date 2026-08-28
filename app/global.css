@@ -156,12 +156,43 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .intro-copy > p { margin: 0; max-width: 1000px; font-size: clamp(1.12rem, 1.65vw, 1.55rem); line-height: 1.45; }
 .intro-copy > p + p { margin-top: 1em; }
-.intro-route { grid-column: 10 / span 3; width: 82%; margin: -28px 0 0 auto; }
+.intro-route { grid-column: 10 / span 3; width: 106%; margin: -28px 0 0 auto; }
+.route-trace { position: relative; }
+.route-trace__svg { display: block; width: 100%; height: auto; overflow: visible; }
+.route-trace__path {
+  fill: none;
+  stroke: var(--blue);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+.route-trace__point {
+  fill: var(--paper);
+  stroke: var(--blue);
+  stroke-width: 4;
+  opacity: 0;
+}
+.route-trace__distance { position: absolute; inset-inline-start: 0; bottom: 3%; margin: 0; color: var(--blue); opacity: .72; }
+.route-trace[data-visible='true'] .route-trace__point--start { animation: route-point-appear 140ms ease-out both; }
+.route-trace[data-visible='true'] .route-trace__path { animation: route-trace-draw 1.8s cubic-bezier(.22,.61,.36,1) 160ms both; }
+.route-trace[data-visible='true'] .route-trace__point--end { animation: route-point-appear 160ms ease-out 1.96s both; }
+.route-trace[data-static='true'] .route-trace__path { stroke-dashoffset: 0; animation: none; }
+.route-trace[data-static='true'] .route-trace__point { opacity: 1; animation: none; }
+@keyframes route-trace-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes route-point-appear { from { opacity: 0; } to { opacity: 1; } }
 .route-mark { fill: none; stroke: var(--blue); stroke-width: 4; overflow: visible; }
 .route-mark circle { fill: var(--paper); stroke-width: 4; }
 .route-mark path { stroke-dasharray: 520; animation: draw-route 1.8s cubic-bezier(.16,1,.3,1) both; }
 @keyframes draw-route { from { stroke-dashoffset: 520; } to { stroke-dashoffset: 0; } }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .route-mark path { animation: none; } * { transition-duration: .01ms !important; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .route-trace__path { stroke-dashoffset: 0; animation: none !important; }
+  .route-trace__point { opacity: 1; animation: none !important; }
+  .route-mark path { animation: none; }
+  * { transition-duration: .01ms !important; }
+}
 
 .featured-section { display: grid; grid-template-columns: 57% 43%; min-height: 760px; background: var(--forest-deep); color: var(--white); }
 .featured-photo { min-height: 760px; position: relative; overflow: hidden; }
@@ -378,7 +409,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .round-link { min-width: 210px; }
   .page-grid { grid-template-columns: 1fr; }
   .section-kicker, .intro-copy, .intro-route, .story-block .story-copy { grid-column: 1; }
-  .intro-route { width: 65%; margin: 15px 0 0 auto; }
+  .intro-route { width: 88%; margin: 15px 0 0 auto; }
   .featured-section { min-height: 0; }
   .featured-photo { min-height: 72vw; }
   .featured-heading-row { margin-bottom: 42px; align-items: flex-start; }

@@ -156,7 +156,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .intro-copy > p { margin: 0; max-width: 1000px; font-size: clamp(1.12rem, 1.65vw, 1.55rem); line-height: 1.45; }
 .intro-copy > p + p { margin-top: 1em; }
-.intro-route { grid-column: 10 / span 3; width: 106%; margin: -28px 0 0 auto; }
+.intro-route { grid-column: 10 / span 3; justify-self: end; width: 125%; margin: -28px 0 0; }
 .route-trace { position: relative; }
 .route-trace__svg { display: block; width: 100%; height: auto; overflow: visible; }
 .route-trace__path {
@@ -409,7 +409,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .round-link { min-width: 210px; }
   .page-grid { grid-template-columns: 1fr; }
   .section-kicker, .intro-copy, .intro-route, .story-block .story-copy { grid-column: 1; }
-  .intro-route { width: 88%; margin: 15px 0 0 auto; }
+  .intro-route { width: 100%; margin: 15px 0 0; }
   .featured-section { min-height: 0; }
   .featured-photo { min-height: 72vw; }
   .featured-heading-row { margin-bottom: 42px; align-items: flex-start; }

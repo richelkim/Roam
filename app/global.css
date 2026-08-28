@@ -270,9 +270,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .route-copy > p:not(.technical) { max-width: 560px; color: #ced7cd; font-size: 1.08rem; }
 .route-placeholder { display: inline-flex; margin-top: 24px; padding: 12px 0; border-top: 1px solid #849087; border-bottom: 1px solid #849087; }
 .strava-frame { width: 100%; min-height: 360px; border: 0; margin-top: 24px; background: white; }
+.logistics { padding-block: clamp(64px, 5vw, 88px); }
 .logistics .section-heading { margin-bottom: 50px; }
 .logistics-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--ink); }
-.logistics-grid article { min-height: 300px; padding: 28px 32px 28px 0; border-right: 1px solid var(--rule); }
+.logistics-grid article { padding: 28px 32px 28px 0; border-right: 1px solid var(--rule); }
 .logistics-grid article + article { padding-left: 32px; }
 .logistics-grid article:last-child { border-right: 0; }
 .logistics-grid p, .logistics-grid ul { margin-top: 54px; font-size: 1.05rem; }
@@ -354,7 +355,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .story-block .story-copy { grid-column: 4 / span 9; }
   .route-poster { min-height: 620px; }
   .logistics-grid { grid-template-columns: 1fr; }
-  .logistics-grid article { min-height: 0; padding: 26px 0 36px !important; border-right: 0; border-bottom: 1px solid var(--rule); }
+  .logistics-grid article { padding: 26px 0 36px !important; border-right: 0; border-bottom: 1px solid var(--rule); }
   .logistics-grid p, .logistics-grid ul { margin-top: 28px; }
   .join-page { grid-template-columns: 1fr; }
   .join-page header { position: static; }

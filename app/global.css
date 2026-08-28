@@ -300,7 +300,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .faq details p { max-width: 680px; margin: 0; padding: 0 0 28px; color: #494c45; }
 
 .join-page { padding-top: 124px; padding-bottom: 140px; display: grid; grid-template-columns: 5fr 7fr; gap: 24px 90px; }
-.join-page header { grid-column: 1; position: sticky; top: 120px; align-self: start; }
+.join-page header { grid-column: 1; grid-row: 1 / span 2; position: sticky; top: 120px; align-self: start; }
 .join-page header h1 { margin: 18px 0 28px; font-family: var(--display); font-size: clamp(4rem, 8vw, 8rem); font-weight: 500; line-height: .9; letter-spacing: -.03em; }
 .join-page > .setup-notice { grid-column: 2; width: 100%; margin: 0 0 12px; align-self: start; }
 .join-page > .rsvp-form, .join-page > .tally-frame, .join-page > .form-message { grid-column: 2; }
@@ -358,7 +358,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .logistics-grid article { padding: 26px 0 36px !important; border-right: 0; border-bottom: 1px solid var(--rule); }
   .logistics-grid p, .logistics-grid ul { margin-top: 28px; }
   .join-page { grid-template-columns: 1fr; }
-  .join-page header { position: static; }
+  .join-page header { grid-row: auto; position: static; }
   .join-page > .setup-notice, .join-page > .rsvp-form, .join-page > .tally-frame, .join-page > .form-message { grid-column: 1; }
 }
 

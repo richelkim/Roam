@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useId, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export type RouteGeometry = {
   d: string
@@ -26,7 +26,6 @@ export function RouteTrace({ path, distance, className = '' }: RouteTraceProps) 
   const containerRef = useRef<HTMLElement>(null)
   const [hasEntered, setHasEntered] = useState(false)
   const [renderStatic, setRenderStatic] = useState(false)
-  const titleId = useId()
 
   useEffect(() => {
     const container = containerRef.current
@@ -68,9 +67,8 @@ export function RouteTrace({ path, distance, className = '' }: RouteTraceProps) 
         viewBox={path.viewBox}
         preserveAspectRatio="xMidYMid meet"
         role="img"
-        aria-labelledby={titleId}
+        aria-label={`${distance} hiking route trace`}
       >
-        <title id={titleId}>{distance} hiking route trace</title>
         <path className="route-trace__path" d={path.d} pathLength={1} />
         <circle className="route-trace__point route-trace__point--start" cx={startX} cy={startY} r="5" />
         <circle className="route-trace__point route-trace__point--end" cx={endX} cy={endY} r="5" />

@@ -19,6 +19,13 @@ export default function HomePage() {
           className="hero-image"
         />
         <div className="hero-wash" />
+        <Link className="hero-rsvp-card" href="/hikes">
+          <span className="hero-rsvp-card__top">
+            <span>JOIN A HIKE</span>
+            <span aria-hidden="true">↗</span>
+          </span>
+          <strong>RSVP</strong>
+        </Link>
         <div className="hero-copy">
           <h1 id="home-title">{SITE_NAME}</h1>
           <div className="hero-bottom">

@@ -1,8 +1,6 @@
 # Roam
 
-For people who like going somewhere.
-
-Roam is a Toronto-area hiking club made by students.
+Roam is a Toronto + GTA hiking club made by students, for everyone.
 
 ## RSVP configuration
 

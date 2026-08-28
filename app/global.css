@@ -187,6 +187,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .button-disabled { display: inline-flex; width: fit-content; padding: 16px 19px; border-radius: 999px; background: var(--mist); color: #596057; font-family: var(--font-geist-mono), monospace; font-size: .7rem; letter-spacing: .06em; }
 .text-link { width: fit-content; color: var(--blue); font-family: var(--font-geist-mono), monospace; font-size: .7rem; font-weight: 650; letter-spacing: .055em; text-transform: uppercase; border-bottom: 1px solid currentColor; padding-bottom: 3px; }
 .text-link:hover { color: var(--forest-deep); }
+.featured-section .text-link:is(:hover, :focus-visible, :active) { color: var(--white); }
 
 .how-preview { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(44px, 8vw, 140px); }
 .intro + .how-preview { padding-top: clamp(24px, 2vw, 32px); }

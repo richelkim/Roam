@@ -308,6 +308,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .rsvp-form label > span { font-weight: 400; color: #686b63; }
 .rsvp-form input:not([type='checkbox']), .rsvp-form select, .rsvp-form textarea { width: 100%; border: 0; border-bottom: 1px solid var(--ink); background: transparent; padding: 12px 0; border-radius: 0; color: var(--ink); }
 .rsvp-form textarea { border: 1px solid var(--ink); padding: 14px; resize: vertical; }
+.risk-section { display: grid; gap: 18px; }
+.risk-disclosure { border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
+.risk-disclosure summary { cursor: pointer; list-style: none; position: relative; padding: 16px 40px 16px 0; font-weight: 550; }
+.risk-disclosure summary::-webkit-details-marker { display: none; }
+.risk-disclosure summary::after { content: '+'; position: absolute; right: 0; top: 12px; color: var(--blue); font-size: 1.5rem; font-weight: 400; }
+.risk-disclosure[open] summary::after { content: '−'; }
+.risk-disclosure p { max-width: 70ch; margin: 0; padding: 0 0 18px; color: #494c45; font-size: .95rem; line-height: 1.55; }
 .check-label { grid-template-columns: 22px 1fr !important; align-items: start; font-weight: 400 !important; }
 .check-label input { width: 18px; height: 18px; accent-color: var(--blue); }
 .form-footnote { margin: -10px 0 0; color: #676b61; }

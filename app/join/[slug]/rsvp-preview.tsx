@@ -24,8 +24,16 @@ export function RsvpPreview({ hikeName, hikeId }: { hikeName: string; hikeId: st
       <label>Instagram or phone <span>optional</span><input name="contact" /></label>
       <label>Hiking experience<select required name="experience" defaultValue=""><option value="" disabled>Choose one</option><option>New to hiking</option><option>A few hikes</option><option>Regular hiker</option></select></label>
       <label>Transportation situation<select required name="transportation" defaultValue=""><option value="" disabled>Choose one</option><option>Transit only</option><option>I can drive</option><option>I would need a ride</option><option>Not sure yet</option></select></label>
+      <label>Emergency contact name<input required name="emergency_contact_name" /></label>
+      <label>Emergency contact phone number<input required type="tel" name="emergency_contact_phone" /></label>
+      <div className="risk-section">
+        <details className="risk-disclosure">
+          <summary>Participation &amp; Assumption of Risk</summary>
+          <p>Hiking and outdoor activities involve inherent risks, including uneven terrain, slips and falls, changing weather, wildlife, physical exertion, and travel to and from trail locations. By joining a Roam hike, you confirm that you are participating voluntarily and are responsible for deciding whether the hike is appropriate for your fitness and experience level. You agree to follow reasonable safety instructions from the hike organizers and to bring suitable footwear, clothing, water, and any personal medication or equipment you may need.</p>
+        </details>
+        <label className="check-label"><input required type="checkbox" name="risk_acknowledgement" /> <span>I have read and understand the Participation &amp; Assumption of Risk statement above.</span></label>
+      </div>
       <label>Anything the hike lead should know? <span>optional</span><textarea name="notes" rows={4} /></label>
-      <label className="check-label"><input required type="checkbox" name="risk_acknowledgement" /> <span>I understand that ordinary outdoor activities involve risks including weather, uneven terrain, slips, and falls.</span></label>
       <button className="button-primary" type="submit">PREVIEW RSVP <span aria-hidden="true">↗</span></button>
       <p className="technical form-footnote">PREVIEW ONLY · THIS FORM WILL NOT SEND</p>
     </form>

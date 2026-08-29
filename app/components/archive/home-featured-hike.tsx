@@ -28,8 +28,8 @@ export function HomeFeaturedHike() {
         </div>
         <p className="featured-description">{featured.shortDescription}</p>
         <div className="action-row">
-          <Link className="button-primary" href={`/hikes/${featured.slug}`}>
-            VIEW HIKE <span aria-hidden="true">↗</span>
+          <Link className="button-primary" href={`/join/${featured.slug}`}>
+            JOIN THIS HIKE <span aria-hidden="true">↗</span>
           </Link>
           <Link className="text-link" href="/hikes">ALL HIKES →</Link>
         </div>

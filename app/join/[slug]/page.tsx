@@ -1,23 +1,11 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getHike } from '../../content/hikes'
+import { tallyUrlFor } from '../../content/rsvp'
 import { formatHikeNumber } from '../../content/site'
 import { RsvpPreview } from './rsvp-preview'
 
 export const metadata: Metadata = { title: 'Join a Hike' }
-
-function tallyUrlFor(hikeName: string, hikeId: string) {
-  const base = process.env.NEXT_PUBLIC_TALLY_FORM_URL
-  if (!base) return null
-  try {
-    const url = new URL(base)
-    url.searchParams.set('hike_name', hikeName)
-    url.searchParams.set('hike_id', hikeId)
-    return url.toString()
-  } catch {
-    return null
-  }
-}
 
 export default async function JoinPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params

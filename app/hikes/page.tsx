@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { HikeCard } from '../components/hike-card'
-import { hikes } from '../content/hikes'
+import { HikeUsefulDetails } from '../components/hike-useful-details'
+import { hikeListUsefulDetails, hikes } from '../content/hikes'
 import { SITE_NAME } from '../content/site'
 
 export const metadata: Metadata = {
@@ -15,7 +16,6 @@ export default function HikesPage() {
     <main>
       <header className="index-hero page-shell">
         <div className="index-title-row">
-          <p className="technical blue">UPCOMING / FULL</p>
           <p className="technical">TORONTO + GTA</p>
         </div>
         <h1>Hikes</h1>
@@ -24,6 +24,8 @@ export default function HikesPage() {
       <section className="hike-index page-shell" aria-label="Hike listings">
         {visibleHikes.map((hike) => <HikeCard key={hike.slug} hike={hike} />)}
       </section>
+
+      <HikeUsefulDetails hike={hikeListUsefulDetails} contextLabel="FOR EVERY HIKE" />
     </main>
   )
 }

@@ -5,12 +5,18 @@ type UsefulDetailsHike = Pick<
   'meetingInformation' | 'transitInformation' | 'whatToBring'
 >
 
-export function HikeUsefulDetails({ hike }: { hike: UsefulDetailsHike }) {
+export function HikeUsefulDetails({
+  hike,
+  contextLabel = 'WHAT TO EXPECT',
+}: {
+  hike: UsefulDetailsHike
+  contextLabel?: string
+}) {
   return (
     <section className="logistics page-shell section-space">
       <div className="section-heading horizontal">
         <div><p className="technical blue">BEFORE YOU GO</p><h2>Useful details.</h2></div>
-        <p className="technical">WHAT TO EXPECT</p>
+        <p className="technical">{contextLabel}</p>
       </div>
       <div className="logistics-grid">
         <article><span className="technical">MEETING</span><p>{hike.meetingInformation}</p></article>
